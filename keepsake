@@ -1,0 +1,1085 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dé keepsake smith | Personal keepsakes made to order</title>
+<meta name="description" content="Personal, lasting keepsakes and jewellery made to order around a name, a date or a story. Engraving, gifting and corporate orders.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="dé keepsake smith">
+<meta property="og:description" content="Personal, lasting keepsakes made slowly around a name, a date or a story.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#1A1A18">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231A1A18'/%3E%3Ctext x='16' y='22' font-size='17' text-anchor='middle' fill='%23f1eee8' font-family='Helvetica,Arial,sans-serif'%3Ed%C3%A9%3C/text%3E%3C/svg%3E">
+<script>/* Site settings. Fill these in before launch. */
+window.DKS={whatsapp:'',email:'hello@dekeepsakesmith.com',paystackKey:'',instagram:'',newsletterAction:''};
+try{if(!sessionStorage.getItem('dks-intro')&&!matchMedia('(prefers-reduced-motion:reduce)').matches)document.documentElement.classList.add('pre')}catch(e){}</script>
+<link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#1A1A18;--ink:#f1eee8;--olive:#2b2a25;--W:100vw;--H:100vh;--gap:6vw;--t:1.1s;--ease:cubic-bezier(.76,0,.18,1)}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;overflow:hidden;background:var(--olive);color:var(--ink);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;opacity:.32;mix-blend-mode:soft-light;animation:grain 1s steps(5) infinite;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+
+#world{position:absolute;left:0;top:0;display:flex;gap:var(--gap);transform-origin:0 0}
+.ready #world{transition:transform var(--t) var(--ease)}
+.card{flex:none;width:var(--cw);height:var(--H);overflow:hidden;position:relative;background:var(--paper)}
+.ready .card{transition:width var(--t) var(--ease),translate .5s ease,transform .5s ease}
+[data-mode=menu] .card{cursor:pointer}
+[data-mode=menu] .card:hover{translate:0 -10px}
+[data-mode=menu] .page *{pointer-events:none}
+.page{position:absolute;left:0;top:0;width:var(--W);height:var(--H);overflow:hidden}
+[data-mode=page] .card.on .page{overflow-y:auto;overflow-x:hidden;scrollbar-width:none}
+.in{position:relative;width:var(--W);height:var(--H);--m:calc(var(--W)*.012)}
+.in.tall{height:calc(var(--H)*1.32)}
+
+/* header */
+.hd{position:absolute;inset:0 0 auto 0;height:80px;font-size:max(11px,calc(var(--W)*.0085));line-height:1.15;text-transform:uppercase;letter-spacing:.01em;z-index:2}
+.hd>*{position:absolute;top:16px}
+.nm{left:var(--m)}
+.nm span{display:block;transition:opacity .6s}
+.nm .mo{position:absolute;left:0;top:0;white-space:nowrap}
+.lg{left:29%;top:12px!important;display:block;line-height:0;color:inherit}
+.lg svg{display:block;height:max(23.4px,calc(var(--W)*.0221));width:auto;overflow:visible}
+.mn{left:57.3%}
+.mn a{display:block}
+.tt{left:85.5%}
+.tt .x{margin-left:.7em}
+.dial{right:var(--m);top:12px!important;width:38px;height:38px;border:1px solid currentColor;border-radius:50%;cursor:grab;touch-action:none}
+.dial:active{cursor:grabbing}
+.dial i{position:absolute;left:50%;top:50%;width:7px;height:7px;margin:-3.5px;border:1px solid currentColor;border-radius:50%}
+.bl{animation:bl 1s steps(2) infinite}@keyframes bl{50%{opacity:0}}
+
+/* in-page type */
+.ttl,.hl{position:absolute;left:var(--m);margin:0;font-weight:400;letter-spacing:-.045em;line-height:.92;font-size:calc(var(--W)*.058)}
+.ttl{top:calc(var(--H)*.12)}
+.hl{top:calc(var(--H)*.1);max-width:calc(var(--W)*.68)}
+.mo,.menuonly{opacity:0}.po,.pageonly{opacity:1}
+[data-mode=menu] .mo,[data-mode=menu] .menuonly{opacity:1}
+[data-mode=menu] .po,[data-mode=menu] .pageonly{opacity:0}
+.menuonly,.pageonly{transition:opacity .6s}
+.sm{position:absolute;font-size:max(11px,calc(var(--W)*.0085));text-transform:uppercase;line-height:1.15}
+
+/* placeholder imagery: swap these blocks for real photography */
+.ph{position:relative;overflow:hidden;flex:none}
+.ph>u{position:absolute;display:block}
+.a{background:linear-gradient(#1b2745,#3b5b8d 58%,#b7a58c)}
+.b{background:linear-gradient(#cf936f,#b4694a 62%,#e0c6a8)}
+.c{background:#6f6a5e}
+.d{background:linear-gradient(#cfc9bc,#e8e2d6)}
+.box{left:50%;top:60%;width:34%;aspect-ratio:1;translate:-50% -50%;rotate:-8deg;background:#f3efe6;box-shadow:0 30px 40px rgba(0,0,0,.3)}
+.box::before,.box::after{content:"";position:absolute;background:#2a3a5c}
+.box::before{left:46%;width:8%;top:0;bottom:0}
+.box::after{top:46%;height:8%;left:0;right:0}
+.lk{left:50%;top:56%;width:36%;aspect-ratio:1;translate:-50% -50%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f3e6cf,#c9a77d);box-shadow:0 24px 36px rgba(0,0,0,.25)}
+.lk::before{content:"";position:absolute;left:50%;bottom:98%;width:1px;height:140%;background:#f3e6cf}
+.arch{left:30%;right:30%;bottom:0;height:58%;border-radius:999px 999px 0 0;background:#8a7f6c}
+
+.add{position:absolute;left:10px;bottom:10px;z-index:3;font:inherit;font-size:11px;padding:6px 10px;border:1px solid rgba(255,255,255,.5);background:rgba(20,20,18,.55);color:#f1eee8;border-radius:99px;cursor:pointer;backdrop-filter:blur(6px);transition:opacity .3s}
+.has .add{opacity:0}.has:hover .add,.add:focus-visible{opacity:1}
+.has>u{display:none}
+/* strips */
+.strip{position:absolute;left:0;right:0;display:flex;overflow-x:auto;scrollbar-width:none;cursor:grab}
+.strip::-webkit-scrollbar{display:none}
+.strip.drag{cursor:grabbing}
+#cases-strip{top:calc(var(--H)*.46);padding:0 calc(var(--W)*.012);display:grid;grid-template-rows:auto;grid-auto-flow:column;grid-auto-columns:calc(var(--W)*.16);gap:calc(var(--H)*.014) calc(var(--W)*.006);align-content:start;overflow-y:hidden}
+#cases-strip figure{margin:0;cursor:pointer;min-width:0}
+#cases-strip figcaption{display:flex;justify-content:space-between;gap:6px;padding-bottom:6px;font-size:max(8.25px,calc(var(--W)*.006375));text-transform:uppercase;line-height:1.15;white-space:nowrap}
+#cases-strip figcaption span:first-child{overflow:hidden;text-overflow:ellipsis}
+#cases-strip .ph{width:100%;height:calc(var(--H)*.4)}
+#cases-strip figure:hover .ph{filter:brightness(1.1)}
+#arch-strip{top:calc(var(--H)*.697);gap:calc(var(--W)*.0075);padding-left:calc(var(--W)*.012)}
+#arch-strip .ph{height:calc(var(--H)*.286)}
+
+/* about */
+.pt{position:absolute;left:var(--m);top:calc(var(--H)*.59);width:calc(var(--W)*.206);height:calc(var(--H)*.74);background:linear-gradient(#cfd4d6,#b9bdbd)}
+.pt u{position:absolute;display:block;background:#1d1d1c}
+.pt .h{left:34%;top:14%;width:32%;aspect-ratio:1;border-radius:50%}
+.pt .bd{left:6%;right:-10%;top:42%;bottom:0;border-radius:40% 40% 0 0}
+.tx{position:absolute;left:57.3%;width:40%;font-size:calc(var(--W)*.0165);line-height:1.08;letter-spacing:-.01em;margin:0}
+
+@media (max-width:700px){
+ .hd{font-size:10px}.lg{left:26%}.mn{left:52%}.tt{left:76%}
+ .ttl,.hl{font-size:calc(var(--W)*.12)}.hl{max-width:92%}
+ .tx{left:var(--m);width:90%;font-size:calc(var(--W)*.045)}
+ .pt{width:calc(var(--W)*.5)}
+}
+@media (prefers-reduced-motion:reduce){:root{--t:.01s}.bl{animation:none}}
+
+:root{--line:color-mix(in srgb,var(--ink) 25%,transparent)}
+.dim{opacity:.72}
+.bag{left:66%;background:none;border:0;color:inherit;font:inherit;text-transform:uppercase;padding:0;cursor:pointer;text-align:left}
+#pdp{position:fixed;inset:0;z-index:20;background:var(--paper);color:var(--ink);overflow:hidden;opacity:0;visibility:hidden;transform:scale(.14);transition:transform var(--t) var(--ease),opacity .5s ease .1s,visibility 0s linear var(--t)}
+#pdp.open{opacity:1;visibility:visible;transform:none;transition:transform var(--t) var(--ease),opacity .4s ease,visibility 0s}
+.pin{position:relative;width:var(--W);height:var(--H);--m:calc(var(--W)*.012)}
+.acc{position:absolute;left:var(--m);top:84px;width:calc(var(--W)*.154)}
+.ai{border-top:1px solid var(--line)}.ai:last-child{border-bottom:1px solid var(--line)}
+.ah{display:flex;justify-content:space-between;align-items:center;width:100%;padding:calc(var(--W)*.0032) 0;background:none;border:0;color:inherit;font:inherit;font-size:max(10px,calc(var(--W)*.00648));letter-spacing:-.02em;text-align:left;cursor:pointer}
+.ah i{font-style:normal;transition:rotate .4s var(--ease)}
+.ai.o .ah i{rotate:45deg}
+.ap{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
+.ai.o .ap{grid-template-rows:1fr}
+.ap>div{overflow:hidden;font-size:max(10px,calc(var(--W)*.004));line-height:1.35;max-width:100%}
+.ap>div>*{margin:0 0 calc(var(--W)*.0035)}
+.ap input{display:block;width:100%;padding:8px 0;border:0;border-bottom:1px solid currentColor;background:transparent;color:inherit;font:inherit;outline:none}
+.pname{position:absolute;left:var(--m);bottom:68px;margin:0;font-weight:400;letter-spacing:-.045em;line-height:.92;font-size:calc(var(--W)*.058);max-width:calc(var(--W)*.52);text-transform:lowercase}
+.pimg{position:absolute;left:57.3%;right:var(--m);top:84px;bottom:68px}
+.pmeta{position:absolute;left:0;right:0;bottom:12px;height:34px;font-size:max(11px,calc(var(--W)*.0085));line-height:1.15;text-transform:uppercase}
+.pmeta>*{position:absolute;bottom:0}
+.pmeta>div:first-child{left:var(--m)}.pm2{left:29%}
+.padd{left:46%;padding:8px 14px;border:1px solid currentColor;background:none;color:inherit;font:inherit;text-transform:uppercase;cursor:pointer;transition:background .3s,color .3s}
+.padd:hover{background:var(--ink);color:var(--paper)}
+#scrim{position:fixed;inset:0;z-index:30;background:rgba(0,0,0,.45);opacity:0;visibility:hidden;transition:opacity .5s,visibility 0s linear .5s}
+#scrim.open{opacity:1;visibility:visible;transition-delay:0s}
+#bag{position:fixed;top:0;right:0;bottom:0;width:min(420px,92vw);z-index:31;background:var(--paper);color:var(--ink);display:flex;flex-direction:column;font-size:13px;line-height:1.35;transform:translateX(100%);visibility:hidden;transition:transform .7s var(--ease),visibility 0s linear .7s}
+#bag.open{transform:none;visibility:visible;transition:transform .7s var(--ease),visibility 0s}
+.bh{display:flex;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line);text-transform:uppercase;font-size:11px}
+.bh button,.lnk,.qty button{background:none;border:0;color:inherit;font:inherit;cursor:pointer;padding:0;text-transform:inherit}
+#bbody{flex:1;overflow:auto;padding:4px 20px}
+.li{display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.th{width:64px;height:80px;background:var(--line) center/cover}
+.qty{display:flex;gap:12px;align-items:center;margin-top:8px}
+.qty button{width:22px;height:22px;border:1px solid var(--line)}
+.qty button.dim{width:auto;border:0;text-decoration:underline}
+.msg{padding:28px 0}
+#bfoot{padding:16px 20px;border-top:1px solid var(--line)}
+.row{display:flex;justify-content:space-between;margin-bottom:10px}
+.btn{width:100%;padding:12px;margin-top:6px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);font:inherit;text-transform:uppercase;cursor:pointer}
+.lnk{display:block;margin:12px auto 0;text-decoration:underline}
+.fld{display:block;width:100%;padding:10px;margin:0 0 8px;border:1px solid var(--line);background:transparent;color:inherit;font:inherit}
+@media (max-width:700px){
+ .tt{display:none}.bag{left:76%}
+ #pdp{overflow-y:auto}
+ .pin{height:auto;min-height:var(--H);padding:76px var(--m) 24px;display:flex;flex-direction:column;gap:18px}
+ .pin>.acc,.pin>.pname,.pin>.pimg,.pin>.pmeta,.pin>.pairs{position:static;width:auto}
+ .pname{font-size:calc(var(--W)*.12);max-width:100%}
+ .pimg{height:75vw}
+ .pmeta{height:auto;display:flex;gap:20px;flex-wrap:wrap;align-items:flex-end}
+ .pmeta>*{position:static}
+ .ah{font-size:max(11px,calc(var(--W)*.02))}
+ #cases-strip{grid-auto-columns:calc(var(--W)*.42)}
+ #cases-strip .ph{height:calc(var(--H)*.3)}
+ #cases-strip figcaption{font-size:9px}
+}
+
+/* v2: view transition for product images */
+::view-transition-group(pimg){animation-duration:.95s;animation-timing-function:cubic-bezier(.76,0,.18,1)}
+::view-transition-old(pimg),::view-transition-new(pimg){height:100%;object-fit:cover}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.45s}
+.vt #pdp{transition:none!important}
+/* v2: strip counter */
+#cnt{font-variant-numeric:tabular-nums}
+/* v2: live engraving preview */
+.eg{display:flex;gap:6px;margin:0 0 8px}
+.eg button{padding:4px 10px;border:1px solid var(--line);border-radius:99px;background:none;color:inherit;font:inherit;cursor:pointer;transition:background .3s,color .3s}
+.eg button.on{background:var(--ink);color:var(--paper)}
+.plate{position:absolute;left:50%;bottom:7%;translate:-50% 0;z-index:2;padding:.45em 1.1em;color:#f1eee8;background:rgba(20,20,18,.38);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.28);border-radius:99px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .4s}
+.plate.on{opacity:1}
+.plate.script{font-family:'Mrs Saint Delafield','Snell Roundhand',cursive;font-size:calc(var(--W)*.034);line-height:1}
+.plate.sans{font-size:calc(var(--W)*.0095);text-transform:uppercase;letter-spacing:.24em}
+.plate i{font-style:normal;display:inline-block;animation:pop .45s var(--ease) both}
+@keyframes pop{from{opacity:0;transform:translateY(.5em) scale(.9);filter:blur(4px)}to{opacity:1;transform:none;filter:none}}
+@media (max-width:700px){.plate.script{font-size:calc(var(--W)*.09)}.plate.sans{font-size:calc(var(--W)*.028)}}
+@media (prefers-reduced-motion:reduce){.plate i{animation:none}}
+
+/* ================= v3 ================= */
+/* clip the wide page row so phones do not zoom out to fit it */
+body{position:fixed;inset:0;width:100%;overflow:hidden;overscroll-behavior:none}
+@keyframes grain{0%{background-position:0 0}20%{background-position:-30px 18px}40%{background-position:22px -40px}60%{background-position:-12px 36px}80%{background-position:40px 8px}100%{background-position:0 0}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes rise{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes chup{from{transform:translateY(110%)}to{transform:none}}
+.ph.has{animation:fadein .6s ease}
+#cases-strip .ph.has,#arch-strip .ph.has{animation:wipe 1s var(--ease)}
+.card{contain:layout style}
+.bn{display:inline-block}
+.ttb{background:none;border:0;color:inherit;font:inherit;text-transform:inherit;padding:0;cursor:pointer;text-align:left}
+.ttb .x{margin-left:.5em;transition:opacity .3s}
+.phase{margin-left:.6em}
+.dial i{transition:none}
+
+/* menu: title letters + card tilt */
+.ch{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
+.ch>i{display:inline-block;font-style:normal}
+[data-mode=menu] .ch>i{animation:chup .8s var(--ease) both;animation-delay:calc(var(--i)*40ms + .3s)}
+
+/* intro */
+#intro{position:fixed;inset:0;z-index:60;background:var(--paper);display:none;align-items:center;justify-content:center;clip-path:inset(0 0 0 0);transition:clip-path .9s var(--ease);pointer-events:none}
+.pre #intro{display:flex}
+#intro svg{width:min(34vw,210px);height:auto;color:var(--ink);overflow:visible}
+/* logo: rings ripple outward from the centre */
+.lgs g,.lgi g{transform-origin:29.5px 32px}
+.lgs path{transform-origin:29.5px 32px}
+.lgs g[style]{animation:none}
+.go .card.on .lgs g[style]{animation:lgin .9s calc(var(--i)*.045s) var(--ease) backwards}
+.go .card.on .lgs path{animation:lgbr 12s calc(5s + var(--i)*70ms) ease-in-out infinite}
+.go .card.on .lg:hover .lgs path,.go .card.on .lg:focus-visible .lgs path{animation:lgp .9s calc(var(--i)*40ms) var(--ease)}
+@keyframes lgbr{0%,84%,100%{transform:none;opacity:1}92%{transform:scale(1.045);opacity:.62}}
+@keyframes lgin{from{opacity:0;transform:scale(.8) rotate(-10deg)}to{opacity:1;transform:none}}
+@keyframes lgp{0%,100%{transform:none;opacity:1}40%{transform:scale(1.08);opacity:.55}}
+.lgi g[style]{opacity:0;animation:lgin 1s calc(.1s + var(--i)*.07s) cubic-bezier(.2,.7,.2,1) forwards}
+.lgw{animation:lgsweep 1.7s .1s cubic-bezier(.45,0,.2,1) forwards}
+@keyframes lgsweep{to{stroke-dashoffset:0}}
+#intro.out{clip-path:inset(0 0 100% 0)}
+.pre #cases-strip figure{opacity:0}
+.go #cases-strip figure{animation:rise .9s var(--ease) backwards;animation-delay:calc(var(--k,0)*70ms)}
+
+/* cursor + magnetic */
+#cur{position:fixed;left:0;top:0;z-index:70;width:74px;height:74px;margin:-37px 0 0 -37px;border-radius:50%;background:var(--ink);color:var(--paper);display:none;place-items:center;font-size:11px;text-transform:uppercase;letter-spacing:.04em;pointer-events:none;scale:0;transition:scale .35s var(--ease)}
+.hascur #cur{display:grid}
+#cur.on{scale:1}#cur.down{scale:.78}
+#pdp.open~#cur,#bag.open~#cur,#gf.open~#cur,#lb.open~#cur,#ct.open~#cur{scale:0}
+.hascur .strip,.hascur .strip.drag,.hascur .strip figure,.hascur body[data-mode=menu] .card{cursor:none}
+.padd,.btn,.bag,.gbtn{transition:background .3s,color .3s,translate .25s ease}
+
+/* pieces page: open space above, strip sits low on the page */
+#cases-strip{top:calc(var(--H)*.585)}
+@media (min-width:701px){#cases-strip .ph{height:calc(var(--H)*.38)}}
+#gfbtn{background:none;border:0;color:inherit;font-family:inherit;padding:0;cursor:pointer;text-align:left;text-decoration:underline;text-underline-offset:3px}
+figure.dm{opacity:.16;filter:grayscale(1)}
+#cases-strip figure{transition:opacity .5s,filter .5s}
+#gf{position:fixed;top:0;left:0;bottom:0;width:min(420px,92vw);z-index:31;background:var(--paper);color:var(--ink);display:flex;flex-direction:column;font-size:13px;line-height:1.35;transform:translateX(-100%);visibility:hidden;transition:transform .7s var(--ease),visibility 0s linear .7s}
+#gf.open{transform:none;visibility:visible;transition:transform .7s var(--ease),visibility 0s}
+#gfbody{flex:1;overflow:auto;padding:18px 20px}
+#gffoot{padding:16px 20px;border-top:1px solid var(--line)}
+.gq{margin:0 0 24px}.gq h3{margin:0 0 10px;font-weight:400;font-size:11px;text-transform:uppercase}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:8px 14px;border:1px solid var(--line);border-radius:99px;background:none;color:inherit;font:inherit;cursor:pointer;transition:background .3s,color .3s,border-color .3s}
+.chip.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.ghost{background:none;color:var(--ink)}
+#ct{position:fixed;left:50%;top:50%;z-index:32;width:min(440px,92vw);max-height:88vh;overflow:auto;background:var(--paper);color:var(--ink);font-size:13px;line-height:1.35;opacity:0;visibility:hidden;transform:translate(-50%,-47%) scale(.97);transition:opacity .4s,transform .6s var(--ease),visibility 0s linear .6s}
+#ct.open{opacity:1;visibility:visible;transform:translate(-50%,-50%);transition:opacity .4s,transform .6s var(--ease),visibility 0s}
+#ctb{padding:22px 20px 20px}
+#ctb h2{margin:0 0 6px;font-weight:400;font-size:clamp(28px,7vw,40px);line-height:1;letter-spacing:-.02em}
+#ctb .cts{margin:0 0 22px;opacity:.6}
+.ctr{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:14px 0;border-top:1px solid var(--line);color:inherit;text-decoration:none;text-transform:uppercase;font-size:11px;cursor:pointer;background:none;border-left:0;border-right:0;border-bottom:0;font-family:inherit;width:100%;text-align:left}
+a.ctr span:last-child{text-transform:none;font-size:13px;text-align:right;word-break:break-all}
+a.ctr:hover span:last-child{text-decoration:underline;text-underline-offset:3px}
+#ctb .gbtn{margin-top:18px}
+.ctv{display:flex;align-items:baseline;justify-content:flex-end;gap:12px;text-align:right}
+.ctv a{color:inherit;text-decoration:none;text-transform:none;font-size:13px;word-break:break-all}
+.ctv a:hover{text-decoration:underline;text-underline-offset:3px}
+.ctv .lnk{font-size:11px;text-transform:uppercase;opacity:.6;text-decoration:underline;text-underline-offset:3px;flex:none}
+.ctv .lnk:hover{opacity:1}
+
+/* archive */
+#arch-strip{align-items:flex-start}
+#arch-strip figure{margin:0;flex:none;cursor:pointer}
+#arch-strip figcaption{display:flex;justify-content:space-between;gap:6px;padding-bottom:6px;font-size:max(8.25px,calc(var(--W)*.006375));text-transform:uppercase;line-height:1.15;white-space:nowrap}
+#arch-strip .ph{width:100%;height:calc(var(--H)*.25)}
+#arch-strip figure:hover .ph{filter:brightness(1.1)}
+#lb{--m:calc(var(--W)*.012);position:fixed;inset:0;z-index:25;background:var(--paper);color:var(--ink);opacity:0;visibility:hidden;transition:opacity .5s,visibility 0s linear .5s}
+#lb.open{opacity:1;visibility:visible;transition:opacity .4s,visibility 0s}
+.vt #lb{transition:none!important}
+#lb .bh{border:0;position:absolute;left:0;right:0;top:0}
+#lbi{position:absolute;left:57.3%;right:var(--m);top:84px;bottom:68px}
+.lbt{position:absolute;left:var(--m);bottom:68px;max-width:calc(var(--W)*.34);font-size:calc(var(--W)*.0125);line-height:1.25}
+.lbt h2{margin:0 0 .3em;font-weight:400;letter-spacing:-.045em;line-height:.92;font-size:calc(var(--W)*.05);text-transform:lowercase}
+.lbt p{margin:0 0 1em}
+.lbn{display:flex;gap:10px}
+
+/* about */
+.in.tall{height:calc(var(--H)*2.45)}
+.w{opacity:.18;transition:opacity .35s}
+[data-mode=menu] .w{opacity:1!important}
+.pt{will-change:translate}
+
+/* studio */
+.in.flow{height:auto;min-height:var(--H);padding-top:calc(var(--H)*.5)}
+.sec{display:grid;grid-template-columns:calc(var(--W)*.573 - var(--m)) 1fr;padding:0 var(--m);margin-bottom:calc(var(--H)*.16)}
+.sec,.ft,.ftx{transition:opacity .6s}
+[data-mode=menu] .sec,[data-mode=menu] .ft,[data-mode=menu] .ftx{opacity:0}
+.sl{font-size:max(11px,calc(var(--W)*.0085));text-transform:uppercase;line-height:1.15}
+.sr{font-size:calc(var(--W)*.0125);line-height:1.22;letter-spacing:-.005em;min-width:0}
+.sr p{margin:0 0 1em}
+.steps{list-style:none;margin:0;padding:0}
+.steps li{display:grid;grid-template-columns:3em 1fr;padding:calc(var(--W)*.008) 0 calc(var(--W)*.012);position:relative}
+.steps li::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--line);transform-origin:0 50%;transform:scaleX(0);transition:transform 1.1s var(--ease)}
+.steps li.seen::before{transform:none}
+.steps .n{font-size:max(11px,calc(var(--W)*.0085));padding-top:.5em}
+.steps b{display:block;font-weight:400;font-size:calc(var(--W)*.0165);letter-spacing:-.01em}
+.steps p{margin:.3em 0 0;opacity:.75}
+.story{padding:calc(var(--W)*.008) 0 calc(var(--W)*.012);border-top:1px solid var(--line)}
+.story:last-child{border-bottom:1px solid var(--line)}
+.sq{font-size:calc(var(--W)*.0165);letter-spacing:-.01em;line-height:1.1;margin:0 0 .5em!important}
+.tag{margin-left:.8em;padding:2px 8px;border:1px solid var(--line);border-radius:99px;font-size:max(9px,calc(var(--W)*.0065));text-transform:uppercase}
+.gbtn{padding:8px 14px;border:1px solid currentColor;background:none;color:inherit;font:inherit;font-size:max(11px,calc(var(--W)*.0085));text-transform:uppercase;cursor:pointer}
+.gbtn:hover{background:var(--ink);color:var(--paper)}
+.fm input,.fm textarea,.fm select{display:block;width:100%;padding:10px 0;margin:0 0 10px;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;color:inherit;font:inherit;font-size:calc(var(--W)*.0105);outline:none}
+.fm select option{color:#111;background:#fff}
+.fm input:focus,.fm textarea:focus,.fm select:focus{border-bottom-color:currentColor}
+.fm .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.ferr{min-height:1.3em;opacity:.72;margin:6px 0 0!important}
+.faq .ai{border-top:1px solid var(--line)}.faq .ai:last-child{border-bottom:1px solid var(--line)}
+.faq .ah{font-size:calc(var(--W)*.0125);padding:calc(var(--W)*.007) 0}
+.faq .ap>div{font-size:calc(var(--W)*.0105);opacity:.8}
+.ft{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 40px;padding:calc(var(--H)*.04) var(--m);border-top:1px solid var(--line);font-size:max(11px,calc(var(--W)*.0085));text-transform:uppercase;line-height:1.3}
+.ft a,.ft button{background:none;border:0;color:inherit;font:inherit;text-transform:inherit;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.ft-abs{position:absolute;left:0;right:0;bottom:0}
+
+/* header: single-line name, text roll on nav hover, engraving spacing */
+.nm .po{white-space:nowrap}
+.rl{display:inline-block;overflow:hidden;vertical-align:top;line-height:1.15;padding-bottom:.1em;margin-bottom:-.1em;text-decoration:inherit}
+.rl i{position:relative;display:block;font-style:normal;transition:transform .55s var(--ease);text-decoration:inherit}
+.rl i::after{content:attr(data-t);position:absolute;left:0;top:calc(100% + .12em);white-space:nowrap;text-decoration:inherit}
+:is(a,button):hover .rl i,:is(a,button):focus-visible .rl i{transform:translateY(calc(-100% - .12em))}
+.eg{margin-top:14px}
+/* closing footer */
+.pol>div{margin-bottom:calc(var(--W)*.014)}
+.pol b{display:block;font-weight:400;font-size:calc(var(--W)*.0165);letter-spacing:-.01em;margin-bottom:.3em}
+.pol p{opacity:.8;margin:0}
+.ftx{position:relative;min-height:var(--H);padding:0 var(--m);display:flex;flex-direction:column}
+.ftx-abs{position:absolute;left:0;right:0;bottom:0;z-index:1;background:var(--paper)}
+.ftx-top{position:relative;flex:1;padding-top:calc(var(--H)*.2);padding-bottom:calc(var(--H)*.08)}
+.ftx-h{margin:0;font-weight:400;letter-spacing:-.045em;line-height:.92;font-size:calc(var(--W)*.06);max-width:calc(var(--W)*.56);color:color-mix(in srgb,var(--ink) 58%,transparent)}
+.ftx-h em{font-style:normal;color:var(--ink)}
+.ftpill{display:inline-block;width:2.35em;height:.68em;border-radius:99px;vertical-align:.02em;margin:0 .06em;background-color:#6f6a5e;background-position:50% 5%!important}
+.ftx-cta{position:absolute;left:calc(var(--W)*.573 - var(--m));top:calc(var(--H)*.34);width:calc(var(--W)*.17)}
+.ftx-cta p{margin:18px 0 0;font-size:max(12px,calc(var(--W)*.0085));line-height:1.35;opacity:.8}
+.ftx-nav{display:flex;justify-content:space-between;gap:16px 40px;flex-wrap:wrap;padding-bottom:calc(var(--H)*.04);text-transform:uppercase;font-size:max(13px,calc(var(--W)*.0118));line-height:1.2}
+.ftx-nav>div{display:flex;flex-wrap:wrap;gap:10px calc(var(--W)*.029)}
+.ftx-nav a,.ftx-nav button{background:none;border:0;color:inherit;font:inherit;text-transform:inherit;padding:0;cursor:pointer}
+.ftx-fine{border-top:1px solid var(--line);padding:calc(var(--H)*.022) 0 calc(var(--H)*.035)}
+.ftx-fine p{margin:0;font-size:max(9px,calc(var(--W)*.0058));line-height:1.35;opacity:.75}
+@media (max-width:700px){
+ .ftx-top{padding-top:calc(var(--H)*.16)}
+ .ftx-h{font-size:calc(var(--W)*.115);max-width:100%}
+ .ftx-cta{position:static;width:auto;margin-top:32px}
+ .ftx-nav{font-size:13px}
+}
+/* product page */
+.pimg{transition:background-size .7s var(--ease),background-position .25s ease}
+.pimg.has{animation:fadein .6s ease}
+.pship{left:61%;max-width:calc(var(--W)*.13);font-size:max(10px,calc(var(--W)*.0075));line-height:1.25;text-transform:none}
+.pairs{position:absolute;left:var(--m);top:calc(var(--H)*.56);width:calc(var(--W)*.154);font-size:max(10px,calc(var(--W)*.0075));line-height:1.5}
+.pairs a{display:block;text-decoration:underline;text-underline-offset:3px}
+.sz{display:grid;grid-template-columns:1fr 1fr;gap:2px 10px}
+.fly{position:fixed;z-index:40;width:80px;height:100px;background:center/cover;border-radius:2px;pointer-events:none;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+
+@media (max-width:700px){
+ .dial{width:32px;height:32px;top:14px!important}
+ .pairs{position:static;width:auto}
+ .pimg.ph{min-height:75vw}
+ .sec{grid-template-columns:1fr;gap:14px}
+ .sr{font-size:calc(var(--W)*.04)}
+ .steps b,.sq{font-size:calc(var(--W)*.05)}
+ .faq .ah{font-size:calc(var(--W)*.04)}.faq .ap>div{font-size:calc(var(--W)*.035)}
+ .fm input,.fm textarea,.fm select{font-size:16px}
+ .sl,.ft{font-size:11px}
+ #arch-strip figcaption{font-size:9px}
+ #cases-strip figcaption{flex-direction:column;gap:1px;padding-bottom:8px}
+ #lbi{left:var(--m);top:76px;bottom:auto;height:50vh}
+ .lbt{max-width:none;right:var(--m);bottom:24px;font-size:calc(var(--W)*.04)}
+ .lbt h2{font-size:calc(var(--W)*.11)}
+ .lg{left:38%}
+}
+@media (prefers-reduced-motion:reduce){
+ body::before{animation:none}
+ .ch>i{animation:none!important}
+ #intro{display:none!important}
+ .lgs g,.lgs path{animation:none!important}
+ .go #cases-strip figure{animation:none}
+ .rl i{transition:none}
+ :is(a,button):hover .rl i,:is(a,button):focus-visible .rl i{transform:none}
+ .ph.has,#cases-strip .ph.has,#arch-strip .ph.has,.pimg.has{animation:none}
+ #cur{display:none!important}
+ .w{opacity:1!important}
+ .steps li::before{transform:none;transition:none}
+}
+/* motion additions */
+.ph.has,.pimg.has,.pt.has,.th,.fly{filter:var(--lite,none)}
+.hl .wd{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
+.hl .wd>i{display:inline-block;font-style:normal}
+.go .card.on .hl .wd>i{animation:chup 1s calc(var(--i)*55ms + .55s) var(--ease) backwards}
+.go .card.on .pt{animation:wipeup 1.3s .55s var(--ease) backwards}
+@keyframes wipeup{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+.rvx{transition:opacity .9s var(--ease) calc(var(--d,0)*90ms),transform .9s var(--ease) calc(var(--d,0)*90ms)}
+.rvx:not(.rv){opacity:0;transform:translateY(40px)}
+.strip figure.rvx:not(.rv){transform:translateY(46px)}
+#cases-strip .ph.has,#arch-strip .ph.has{background-size:cover!important;background-position:var(--bx,50%) 50%!important}
+.ftpill{background-position:50% var(--py,5%)!important}
+.fw{opacity:.2;transition:opacity .9s calc(var(--i)*120ms) ease}
+.ftx.fin .fw{opacity:1}
+.ftx.nt .fw{transition:none}
+.bloom{position:fixed;pointer-events:none;color:var(--ink);transform:translate(-50%,-50%)}
+.bloom svg{display:block;width:100%;height:auto;overflow:visible}
+.bloom g[style]{transform-origin:29.5px 32px;animation:bloom 1.1s calc(var(--i)*40ms) cubic-bezier(.2,.7,.2,1) both}
+@keyframes bloom{0%{opacity:0;transform:scale(.45)}22%{opacity:.7}100%{opacity:0;transform:scale(1.9)}}
+.ldr{display:grid;justify-items:center;gap:16px;padding:56px 0}
+.lgl{width:56px;height:auto;color:var(--ink);overflow:visible}
+.lgl g[style]{transform-origin:29.5px 32px;animation:lgl 1.4s calc(var(--i)*70ms) ease-in-out infinite}
+@keyframes lgl{0%,100%{opacity:.16;transform:scale(.93)}40%{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+ .hl .wd>i,.pt,.lgs path,.bloom,.lgl g{animation:none!important}
+ .rvx,.fw{transition:none!important}
+ .rvx:not(.rv){opacity:1!important;transform:none!important}
+ .fw{opacity:1!important}
+}
+#pdp.open~#cur.on{scale:1}
+</style>
+</head>
+<body data-mode="page">
+<div id="world">
+
+<article class="card on" data-p="cases"><div class="page"><div class="in">
+ <h1 class="ttl menuonly">pieces</h1>
+ <div class="sm pageonly" id="cnt" style="left:var(--m);top:calc(var(--H)*.55)"></div>
+ <button type="button" class="sm pageonly" id="gfbtn" style="left:57.3%;top:calc(var(--H)*.55)">Find a gift</button>
+ <div class="strip" id="cases-strip"></div>
+</div></div></article>
+
+<article class="card" data-p="archive"><div class="page"><div class="in">
+ <h1 class="ttl">archive</h1>
+ <p class="sm" style="left:57.3%;top:calc(var(--H)*.175)">A curated selection<br>of keepsakes &amp; explorations<br><br>2021—2026</p>
+ <div class="strip" id="arch-strip"></div>
+</div></div></article>
+
+<article class="card" data-p="about"><div class="page"><div class="in tall">
+ <h1 class="ttl menuonly">about</h1>
+ <h1 class="hl pageonly">We craft keepsakes that remember what matters, so you don’t have to hold it all</h1>
+ <div class="pt" data-slot="p0"><u class="h"></u><u class="bd"></u></div>
+ <p class="sm" style="left:57.3%;top:calc(var(--H)*.59)">About us</p>
+ <p class="tx" style="top:calc(var(--H)*.65)">dé keepsake smith is a small gift studio making personal, lasting pieces. Every object starts with a name, a date or a story, and is made slowly around it.</p>
+ <p class="tx" style="top:calc(var(--H)*.65 + var(--W)*.1)">Our work sits between the shop and the workshop: considered materials, quiet design, and packaging worth keeping. Made to be handed down.</p>
+ <footer class="ftx ftx-abs" data-ft></footer>
+</div></div></article>
+
+<article class="card" data-p="studio"><div class="page"><div class="in flow">
+ <h1 class="ttl menuonly">studio</h1>
+ <h1 class="hl pageonly">Made to order, by hand, for the people you keep close</h1>
+ <section class="sec" id="s-how"><div class="sl">How it is made</div><div class="sr"><ol class="steps">
+  <li><span class="n">01</span><div><b>Choose a piece</b><p>Pick a ring, pendant, bracelet, locket or hoops from the pieces page.</p></div></li>
+  <li><span class="n">02</span><div><b>Add your words</b><p>A name, a date or a short line of up to 20 characters, previewed on the piece before you order.</p></div></li>
+  <li><span class="n">03</span><div><b>Made by hand</b><p>Each order is made to order and finished by hand in sterling silver with 18k gold plating.</p></div></li>
+  <li><span class="n">04</span><div><b>Delivered</b><p>Ships in 5 to 7 working days, in packaging worth keeping.</p></div></li>
+ </ol></div></section>
+ <section class="sec"><div class="sl">Stories</div><div class="sr" id="stories"></div></section>
+ <section class="sec"><div class="sl">Gifting and corporate</div><div class="sr"><p>For weddings, teams and clients: matching pieces in numbers, a gift note in your words and packaging worth keeping. Tell us the quantity and the date you need them by.</p><button type="button" class="gbtn" id="quote">Request a quote</button></div></section>
+ <section class="sec" id="s-commission"><div class="sl">Commission a piece</div><div class="sr"><form class="fm" id="cf" novalidate>
+  <input name="name" placeholder="Your name" autocomplete="name" aria-label="Your name">
+  <input name="contact" placeholder="WhatsApp number or email" aria-label="WhatsApp number or email">
+  <select name="type" aria-label="Request type"><option>Custom piece</option><option>Corporate gifting</option><option>Wedding favours</option><option>Something else</option></select>
+  <textarea name="details" rows="3" placeholder="Tell us what you have in mind" aria-label="Details"></textarea>
+  <div class="acts"><button type="submit" class="gbtn">Send on WhatsApp</button><button type="button" class="gbtn" id="cmail">Send by email</button></div>
+  <p class="ferr" id="cferr" role="alert"></p>
+ </form></div></section>
+ <section class="sec"><div class="sl">Questions</div><div class="sr faq" id="faq"></div></section>
+ <section class="sec"><div class="sl">Stay close</div><div class="sr"><p>New season pieces and the occasional story, sent rarely.</p><form class="fm" id="nl" novalidate><input name="email" type="email" placeholder="Your email" autocomplete="email" aria-label="Your email"><div class="acts"><button type="submit" class="gbtn">Join the list</button></div><p class="ferr" id="nlm" role="status"></p></form></div></section>
+ <section class="sec" id="s-policies"><div class="sl">Policies</div><div class="sr pol">
+  <div id="p-privacy"><b>Privacy</b><p>We ask for your name, contact details and delivery address only to make, deliver and talk to you about your order. Your email is used for the newsletter only if you join it. We do not sell your information.</p></div>
+  <div id="p-cookies"><b>Cookies</b><p>This site uses your browser’s storage to remember your bag and your time-of-day setting. We do not use advertising or tracking cookies. Our payment provider may set its own cookies at checkout.</p></div>
+  <div id="p-returns"><b>Returns</b><p>Pieces can be returned within 14 days of delivery. Engraved pieces are final sale. Resizing a ring is free within 30 days of delivery. To start a return, message us on WhatsApp or email.</p></div>
+ </div></section>
+ <footer class="ftx" data-ft></footer>
+</div></div></article>
+
+</div>
+
+<div id="pdp" aria-hidden="true"><div class="pin">
+ <div class="acc" id="acc"></div>
+ <h1 class="pname"></h1>
+ <div class="pimg ph a" data-slot="pdp"></div>
+ <div class="pmeta"><div><span class="dim">Price</span><br><span id="pp"></span></div><div class="pm2"><span class="dim">Materials</span><br><span id="pm"></span></div><button type="button" class="padd">Add to bag</button><div class="pship dim">Made to order. Ships in 5 to 7 working days</div></div>
+ <div class="pairs" id="pairs"></div>
+</div></div>
+<div id="scrim"></div>
+<aside id="bag" role="dialog" aria-label="Bag" aria-hidden="true">
+ <div class="bh"><span>Bag (<span class="bn">0</span>)</span><button type="button" data-a="close" id="bclose">Close</button></div>
+ <div id="bbody"></div><div id="bfoot"></div>
+</aside>
+<div id="ct" role="dialog" aria-modal="true" aria-label="Contact" aria-hidden="true"><div class="bh"><span>Contact</span><button type="button" id="ctx">Close</button></div><div id="ctb"></div></div>
+<noscript><p>dé keepsake smith makes personal, lasting keepsakes made to order around a name, a date or a story.</p><ul><li>Signet ring, ₦85,000</li><li>Pendant necklace, ₦64,000</li><li>Charm bracelet, ₦72,000</li><li>Engraved locket, ₦98,000</li><li>Hoop earrings, ₦48,000</li><li>Birthstone ring, ₦79,000</li><li>Initial hoops, ₦52,000</li><li>Family locket, ₦105,000</li><li>Ruby drop pendant, ₦68,000</li><li>Cuff bracelet, ₦91,000</li><li>Emerald ring, ₦88,000</li><li>Everyday hoops, ₦56,000</li><li>Sapphire pendant, ₦71,000</li><li>Long chain pendant, ₦82,000</li></ul></noscript>
+<div id="intro" aria-hidden="true"></div>
+<div id="cur" aria-hidden="true"></div>
+<aside id="gf" role="dialog" aria-label="Gift finder" aria-hidden="true"><div class="bh"><span>Gift finder</span><button type="button" id="gfclose">Close</button></div><div id="gfbody"></div><div id="gffoot"></div></aside>
+<div id="lb" role="dialog" aria-modal="true" aria-label="Archive piece" aria-hidden="true"><div class="bh"><span id="lbn"></span><button type="button" id="lbx">Close</button></div><div id="lbi" class="ph" role="img"></div><div class="lbt"><h2 id="lbh"></h2><p class="dim" id="lby"></p><p id="lbp"></p><div class="lbn"><button type="button" class="gbtn" id="lbprev">Previous</button><button type="button" class="gbtn" id="lbnext">Next</button></div></div></div>
+<script>window.IMG={};</script>
+<script>
+(function(){
+const pdpOpen=()=>document.getElementById('pdp').classList.contains('open'),bagOpen=()=>document.getElementById('bag').classList.contains('open');
+const order=['cases','archive','about','studio'];
+const world=document.getElementById('world');
+const cards=[...document.querySelectorAll('.card')];
+let mode='page',cur='cases';
+
+const LOGO_D=["M30.0107 26.6758C30.4019 26.6327 30.8117 26.6762 31.2188 26.9609C31.5931 27.223 31.8137 27.5889 31.9609 27.9551C32.1052 28.314 32.1917 28.7098 32.2725 29.0332C32.4373 29.6936 32.4336 30.538 32.3955 31.1914C32.3761 31.5231 32.3474 31.8164 32.3232 32.0264C32.3112 32.1309 32.2999 32.2157 32.292 32.2744C32.2881 32.3034 32.2855 32.327 32.2832 32.3428C32.2821 32.3504 32.2809 32.3571 32.2803 32.3613C32.2801 32.3626 32.2798 32.364 32.2795 32.3652C32.2794 32.3659 32.2793 32.3666 32.2793 32.3673C32.2793 32.3679 32.2793 32.3685 32.2792 32.369C32.2494 32.5609 32.069 32.6931 31.877 32.6641C31.6853 32.6347 31.5536 32.4553 31.5818 32.2636C31.5819 32.2624 31.582 32.2611 31.582 32.2598C31.582 32.2585 31.5821 32.2571 31.5824 32.2558C31.5831 32.2524 31.5842 32.2476 31.585 32.2422C31.587 32.2283 31.5901 32.2066 31.5938 32.1797C31.6011 32.1251 31.6116 32.0447 31.623 31.9453C31.6461 31.7452 31.674 31.4657 31.6924 31.1504C31.7298 30.5086 31.7254 29.7546 31.5879 29.2041C31.4993 28.8494 31.4276 28.5188 31.3066 28.2178C31.1887 27.9244 31.0366 27.6947 30.8145 27.5391C30.5852 27.3787 30.3607 27.3459 30.0879 27.376C29.945 27.3918 29.7921 27.4244 29.6182 27.4658C29.4501 27.5059 29.2554 27.556 29.0566 27.5957C28.6441 27.6781 28.3283 27.8175 28.0781 28.0166C27.8284 28.2156 27.6232 28.4907 27.4551 28.874C27.2564 29.3274 27.2708 29.7043 27.4111 30.0557C27.5589 30.4251 27.8561 30.7901 28.2695 31.1855C28.574 31.4767 29.0754 31.6831 29.542 31.8164C29.7681 31.8809 29.9738 31.9245 30.1221 31.9521C30.1955 31.9658 30.2547 31.9763 30.2949 31.9824C30.3148 31.9855 30.3309 31.9879 30.3408 31.9893C30.3447 31.9898 30.3482 31.9899 30.3505 31.9901C30.3512 31.9902 30.3519 31.9904 30.3525 31.9907C30.3532 31.991 30.3539 31.9913 30.3546 31.9914C30.5469 32.0163 30.6841 32.1922 30.6602 32.3848C30.6374 32.5656 30.4802 32.6973 30.3018 32.6934L30.2656 32.6904H30.2637C30.2627 32.6903 30.2612 32.6897 30.2598 32.6895C30.2562 32.689 30.2504 32.6884 30.2441 32.6875C30.2312 32.6857 30.2118 32.6832 30.1885 32.6797C30.1415 32.6725 30.0742 32.6618 29.9922 32.6465C29.8278 32.6158 29.5999 32.5662 29.3477 32.4941C28.8568 32.3539 28.2159 32.11 27.7822 31.6953C27.3463 31.2784 26.9603 30.8282 26.7559 30.3164C26.5443 29.7866 26.5366 29.2149 26.8096 28.5918C27.0136 28.1264 27.2818 27.7502 27.6387 27.4658C27.9955 27.1817 28.4225 27.0034 28.9189 26.9043C29.1007 26.868 29.2713 26.8241 29.4551 26.7803C29.633 26.7379 29.8217 26.6967 30.0107 26.6758Z", "M28.4844 24.7002C29.23 24.5514 29.8959 24.5203 30.541 24.6465C31.1874 24.773 31.7909 25.0527 32.4189 25.4922C33.0044 25.9019 33.4274 26.3073 33.7441 26.791C34.0595 27.2728 34.2571 27.812 34.4209 28.4678C34.7186 29.6596 34.7149 31.2058 34.6436 32.4277C34.6076 33.0436 34.5527 33.5877 34.5078 33.9775C34.4854 34.1723 34.4659 34.33 34.4512 34.4385C34.4439 34.4923 34.4377 34.5347 34.4336 34.5635C34.4316 34.5775 34.4298 34.5891 34.4287 34.5967C34.4284 34.5987 34.4282 34.6007 34.4281 34.6024C34.4279 34.6044 34.4274 34.6064 34.4268 34.6084L34.4092 34.6777C34.3526 34.8315 34.1936 34.9296 34.0254 34.9043C33.8332 34.875 33.7006 34.6951 33.7293 34.503C33.7294 34.5023 33.7297 34.5016 33.73 34.501C33.7303 34.5003 33.7305 34.4996 33.7306 34.4989C33.7308 34.4974 33.7311 34.4953 33.7314 34.4932C33.7324 34.4865 33.7335 34.4759 33.7354 34.4629C33.7392 34.436 33.7449 34.3955 33.752 34.3438C33.7661 34.2395 33.7858 34.0862 33.8076 33.8965C33.8514 33.5165 33.9045 32.9862 33.9395 32.3867C34.0101 31.1764 34.0066 29.7206 33.7363 28.6387C33.5822 28.0216 33.4094 27.5664 33.1543 27.1768C32.9003 26.7889 32.5501 26.445 32.0146 26.0703C31.4476 25.6735 30.9346 25.4424 30.4062 25.3389C29.8766 25.2353 29.3068 25.2549 28.6221 25.3916C27.8107 25.5537 27.1697 25.832 26.6533 26.2432C26.1372 26.6544 25.725 27.2156 25.3936 27.9717C24.5735 29.8428 25.0308 31.6596 26.5312 33.0947C27.1377 33.6747 28.2248 33.9783 29.2324 34.125C29.724 34.1966 30.1757 34.2276 30.5039 34.2412C30.6671 34.248 30.7998 34.2504 30.8906 34.251H31.0283C31.2227 34.2471 31.3843 34.4014 31.3887 34.5957C31.3925 34.7778 31.2569 34.9308 31.0801 34.9531L31.0439 34.9561H30.8867C30.7886 34.9554 30.6473 34.9534 30.4746 34.9463C30.1293 34.932 29.6526 34.8982 29.1309 34.8223C28.1109 34.6737 26.8236 34.35 26.0439 33.6045C24.354 31.9882 23.7951 29.8608 24.7471 27.6885C25.1145 26.8503 25.5905 26.189 26.2139 25.6924C26.837 25.1961 27.5889 24.879 28.4844 24.7002Z", "M27.9688 22.0938C29.1098 21.8659 30.117 21.8211 31.0869 22.0107C32.0579 22.2007 32.9703 22.6214 33.9287 23.292C34.8239 23.9185 35.4592 24.5314 35.9336 25.2559C36.4068 25.9785 36.7063 26.7921 36.958 27.7998C37.4127 29.62 37.4094 31.9956 37.2988 33.8896C37.2432 34.8415 37.1603 35.6826 37.0908 36.2852C37.0561 36.5863 37.0246 36.8289 37.002 36.9961C36.9907 37.0793 36.981 37.1443 36.9746 37.1885C36.9715 37.2102 36.9695 37.2278 36.9678 37.2393C36.9671 37.2441 36.9664 37.2488 36.966 37.2519C36.9659 37.2526 36.9657 37.2533 36.9655 37.254L36.9651 37.2552C36.9649 37.2556 36.9648 37.2561 36.9648 37.2565C36.9648 37.2567 36.9648 37.2569 36.9648 37.2571C36.9353 37.4492 36.7556 37.5816 36.5635 37.5527C36.3712 37.5234 36.2387 37.3439 36.2675 37.1517C36.2676 37.1515 36.2676 37.1513 36.2676 37.1511C36.2676 37.1506 36.2677 37.1502 36.2678 37.1498L36.2682 37.1484C36.2684 37.1478 36.2686 37.1471 36.2687 37.1464C36.2692 37.1438 36.2699 37.1401 36.2705 37.1357C36.2721 37.1251 36.2743 37.1087 36.2773 37.0879C36.2834 37.0456 36.2917 36.9825 36.3027 36.9014C36.3248 36.7383 36.3555 36.5001 36.3896 36.2041C36.458 35.6114 36.5401 34.7842 36.5947 33.8486C36.7046 31.9663 36.7016 29.6809 36.2744 27.9707C36.0324 27.0019 35.7565 26.272 35.3438 25.6416C34.9321 25.0131 34.3694 24.4614 33.5244 23.8701C32.627 23.2421 31.8052 22.8701 30.9521 22.7031C30.0978 22.5361 29.1875 22.5695 28.1074 22.7852C26.824 23.0414 25.7982 23.4843 24.9668 24.1465C24.1357 24.8085 23.4777 25.7066 22.9531 26.9033C21.6434 29.8917 22.3826 32.7989 24.7646 35.0771C25.7541 36.0233 27.4966 36.5002 29.0645 36.7285C29.8363 36.8409 30.5442 36.8898 31.0586 36.9111C31.3151 36.9217 31.5238 36.9258 31.667 36.9268C31.7382 36.9272 31.7941 36.9271 31.8311 36.9268C31.8489 36.9266 31.863 36.9259 31.8721 36.9258H31.8857C32.0798 36.9221 32.2406 37.0764 32.2451 37.2705C32.249 37.4528 32.1136 37.6058 31.9365 37.6279L31.9004 37.6309H31.8828C31.8722 37.631 31.8565 37.6317 31.8369 37.6318C31.7966 37.6322 31.7372 37.6323 31.6621 37.6318C31.5117 37.6309 31.295 37.6272 31.0293 37.6162C30.4978 37.5942 29.7648 37.5425 28.9629 37.4258C27.3826 37.1956 25.4389 36.6987 24.2764 35.5869C21.705 33.1275 20.866 29.9096 22.3076 26.6201C22.8682 25.3414 23.5891 24.3422 24.5273 23.5947C25.4653 22.8477 26.6017 22.3668 27.9688 22.0938Z", "M27.4424 19.4189C28.989 19.1102 30.3455 19.0509 31.6484 19.3057C32.9528 19.5608 34.182 20.1262 35.4795 21.0342C36.6925 21.883 37.5464 22.7082 38.1826 23.6797C38.8176 24.6495 39.2225 25.7455 39.5645 27.1143C40.1802 29.5793 40.1772 32.8058 40.0264 35.3896C39.9507 36.6862 39.8368 37.8314 39.7422 38.6523C39.6949 39.0627 39.6519 39.3935 39.6211 39.6211C39.6057 39.7344 39.5936 39.8229 39.585 39.8828C39.5807 39.9124 39.5765 39.9356 39.5742 39.9512L39.5713 39.9736C39.5713 39.9749 39.5712 39.9762 39.571 39.9775C39.5406 40.1687 39.3605 40.3004 39.1689 40.2715C38.9767 40.242 38.8449 40.0618 38.874 39.8695C38.874 39.8693 38.874 39.869 38.874 39.8688C38.874 39.8684 38.8741 39.868 38.8742 39.8676C38.8744 39.8667 38.8748 39.8654 38.875 39.8643C38.8755 39.8607 38.8759 39.8546 38.877 39.8477C38.8791 39.833 38.8826 39.8107 38.8867 39.7822C38.8951 39.7242 38.9078 39.6376 38.9229 39.5264C38.9531 39.303 38.9953 38.9774 39.042 38.5723C39.1355 37.7611 39.2475 36.6292 39.3223 35.3486C39.4724 32.7765 39.4691 29.6402 38.8809 27.2852C38.5486 25.9551 38.1675 24.9441 37.5928 24.0664C37.0192 23.1905 36.2383 22.4262 35.0752 21.6123C33.8386 20.7469 32.7001 20.2302 31.5137 19.998C30.3261 19.7658 29.0661 19.8137 27.5801 20.1104C25.8124 20.4633 24.392 21.0754 23.2373 21.9951C22.0831 22.9146 21.1739 24.1588 20.4512 25.8076C18.639 29.9426 19.6655 33.9688 22.9521 37.1123C24.3347 38.4342 26.7509 39.0883 28.8936 39.4004C29.9528 39.5546 30.9235 39.6222 31.6289 39.6514C31.981 39.6659 32.267 39.6706 32.4639 39.6719C32.5621 39.6725 32.6392 39.6723 32.6904 39.6719C32.7155 39.6717 32.7354 39.6711 32.748 39.6709H32.7666C32.9606 39.6673 33.1213 39.8217 33.126 40.0156C33.1299 40.1979 32.9944 40.3519 32.8174 40.374L32.7812 40.376H32.7744C32.7708 40.376 32.7652 40.3768 32.7588 40.377H32.459C32.2549 40.3756 31.9607 40.3704 31.5996 40.3555C30.877 40.3256 29.8814 40.2563 28.792 40.0977C26.6367 39.7838 24.0204 39.1088 22.4648 37.6211C18.9886 34.2964 17.8605 29.9606 19.8047 25.5244C20.5634 23.7934 21.5364 22.4483 22.7979 21.4434C24.0592 20.4387 25.5909 19.7887 27.4424 19.4189Z", "M25.5902 16.3548C25.902 16.467 25.8682 16.9474 25.5497 17.0388C21.8613 18.0967 19.5127 20.8646 17.8457 24.668C15.5107 29.996 16.8373 35.1857 21.0654 39.2295C22.8568 40.9424 25.973 41.7815 28.7139 42.1807C30.0722 42.3785 31.3165 42.4655 32.2207 42.5029C32.6722 42.5216 33.0392 42.5277 33.292 42.5293C33.4181 42.5301 33.5171 42.5298 33.583 42.5293C33.6155 42.529 33.6408 42.5286 33.6572 42.5283H33.6816C33.8758 42.5246 34.0367 42.6788 34.041 42.873C34.0451 43.0675 33.8906 43.2289 33.6963 43.2334H33.668C33.65 43.2337 33.6231 43.2341 33.5889 43.2344C33.5197 43.2349 33.4177 43.2352 33.2881 43.2344C33.0281 43.2327 32.6522 43.2261 32.1914 43.207C31.2701 43.1689 30.0007 43.0801 28.6123 42.8779C25.8588 42.4769 22.5416 41.617 20.5771 39.7383C16.1599 35.5133 14.7333 30.0138 17.2002 24.3848C18.9248 20.45 21.4182 17.472 25.3953 16.3478C25.4592 16.3297 25.5277 16.3324 25.5902 16.3548Z", "M28.5755 16.5183C28.1955 16.3817 28.2559 15.858 28.6592 15.8371C30.0444 15.7656 31.2501 15.9017 32.3906 16.2314C34.0025 16.6976 35.4605 17.544 37.0918 18.6855C38.6355 19.7659 39.7178 20.8113 40.5225 22.04C41.3259 23.2671 41.8386 24.6568 42.2744 26.4014C42.7725 28.3954 42.9511 30.7842 42.9666 33.108C42.9679 33.2882 42.8319 33.4393 42.6527 33.4584C42.4444 33.4806 42.263 33.3173 42.2616 33.1078C42.2464 30.8229 42.0714 28.4964 41.5908 26.5723C41.1647 24.8664 40.6757 23.5616 39.9326 22.4268C39.1907 21.2936 38.1814 20.3081 36.6875 19.2627C35.0791 18.1372 33.6956 17.3434 32.1943 16.9092C31.1483 16.6067 30.0318 16.4768 28.728 16.5408C28.6762 16.5434 28.6243 16.5359 28.5755 16.5183Z", "M42.5652 34.3289C42.776 34.3062 42.9591 34.4732 42.9543 34.6851C42.9368 35.4664 42.9045 36.2277 42.8623 36.9502C42.7656 38.606 42.6208 40.069 42.5 41.1172C42.4396 41.6409 42.3851 42.0623 42.3457 42.3525C42.3261 42.4973 42.3099 42.6101 42.2988 42.6865C42.2934 42.7242 42.2891 42.7537 42.2861 42.7734C42.2847 42.7829 42.283 42.7908 42.2822 42.7959C42.2819 42.7977 42.2816 42.7996 42.2814 42.801C42.2813 42.8015 42.2812 42.802 42.2812 42.8025C42.2812 42.8033 42.2812 42.8041 42.281 42.8049L42.2637 42.873C42.2071 43.0268 42.0482 43.125 41.8799 43.0996C41.6878 43.0703 41.5553 42.8912 41.5839 42.6991C41.5839 42.6985 41.584 42.698 41.584 42.6974C41.584 42.6967 41.5841 42.6959 41.5842 42.6952C41.5844 42.6941 41.5847 42.6927 41.585 42.6914C41.5857 42.6867 41.5875 42.679 41.5889 42.6699C41.5917 42.6511 41.5953 42.6227 41.6006 42.5859C41.6113 42.5115 41.6271 42.4005 41.6465 42.2578C41.6853 41.9717 41.739 41.5548 41.7988 41.0361C41.9185 39.9977 42.0625 38.5487 42.1582 36.9092C42.2 36.1927 42.2322 35.4415 42.2496 34.6734C42.2537 34.4957 42.3885 34.348 42.5652 34.3289Z", "M26.2803 13.5342C28.7201 13.047 30.8473 12.9562 32.8838 13.3545C34.9212 13.7531 36.8463 14.6366 38.8896 16.0664C40.8312 17.4251 41.8654 18.8286 42.6973 20.3672C43.1086 21.1281 43.4739 21.9284 43.8691 22.7568C44.2663 23.5893 44.6997 24.4632 45.2578 25.3975C46.3157 27.1683 46.8345 29.3518 47.0283 31.6064C47.2224 33.864 47.0928 36.2174 46.8359 38.3457C46.579 40.4749 46.1939 42.3882 45.873 43.7686C45.7126 44.4588 45.5675 45.0174 45.4629 45.4033C45.4107 45.5959 45.3682 45.7466 45.3389 45.8486C45.3243 45.8991 45.3125 45.9384 45.3047 45.9648C45.3009 45.9777 45.2979 45.9883 45.2959 45.9951C45.295 45.9981 45.2944 46.0011 45.2939 46.0029L45.293 46.0059L45.2656 46.0723C45.1877 46.2164 45.0164 46.2903 44.8535 46.2412C44.6674 46.1849 44.5622 45.9888 44.6179 45.8027C44.6181 45.8021 44.6182 45.8014 44.6182 45.8008C44.6182 45.8001 44.6183 45.7995 44.6184 45.7989C44.6189 45.7973 44.6195 45.7951 44.6201 45.793C44.622 45.7869 44.6254 45.7775 44.6289 45.7656C44.6363 45.7407 44.647 45.7024 44.6611 45.6533C44.6895 45.5545 44.731 45.4076 44.7822 45.2188C44.8848 44.8402 45.0273 44.2902 45.1855 43.6094C45.5023 42.2464 45.8826 40.3582 46.1357 38.2607C46.389 36.1621 46.5147 33.8605 46.3262 31.667C46.1373 29.4705 45.6349 27.4047 44.6523 25.7598C44.0772 24.797 43.6329 23.899 43.2324 23.0596C42.83 22.216 42.4773 21.4423 42.0771 20.7021C41.2859 19.2387 40.3189 17.9277 38.4854 16.6445C36.5028 15.2572 34.6677 14.4214 32.748 14.0459C30.8274 13.6703 28.7976 13.7507 26.4189 14.2256C23.5858 14.7913 21.2966 15.7735 19.4307 17.2598C17.5652 18.7459 16.1013 20.7524 14.9424 23.3965C12.0246 30.0543 13.6855 36.5415 18.9629 41.5889C21.2101 43.738 25.1076 44.783 28.5156 45.2793C30.2075 45.5257 31.757 45.6341 32.8828 45.6807C33.4451 45.7039 33.9018 45.7118 34.2168 45.7139C34.374 45.7149 34.4968 45.7145 34.5791 45.7139C34.6197 45.7135 34.6512 45.7132 34.6719 45.7129C34.6819 45.7127 34.6903 45.712 34.6953 45.7119H34.7031C34.8973 45.7083 35.0581 45.8634 35.0625 46.0576C35.0662 46.2398 34.9309 46.3929 34.7539 46.415L34.7178 46.4169C34.7171 46.417 34.7165 46.4171 34.7159 46.4174C34.7152 46.4178 34.7144 46.418 34.7137 46.418H34.6826C34.6604 46.4183 34.6273 46.4186 34.585 46.4189C34.4993 46.4197 34.3728 46.42 34.2119 46.4189C33.8897 46.4168 33.4248 46.4084 32.8535 46.3848C31.7105 46.3375 30.1361 46.2283 28.4141 45.9775C24.9937 45.4794 20.896 44.4133 18.4756 42.0986C13.0087 36.87 11.247 30.0723 14.2969 23.1133C15.4918 20.3871 17.0184 18.2795 18.9912 16.708C20.9637 15.1369 23.3635 14.1167 26.2803 13.5342Z", "M25.6865 10.5234C28.5828 9.94517 31.1033 9.83802 33.5146 10.3096C35.9273 10.7815 38.2097 11.8284 40.6348 13.5254C45.2214 16.7352 45.8872 20.1269 48.2031 24.7627C50.3081 28.9761 50.2947 35.0779 49.7803 40.0645C49.5219 42.5687 49.1343 44.814 48.8115 46.4326C48.6502 47.2418 48.5046 47.896 48.3994 48.3477C48.347 48.573 48.3049 48.7489 48.2754 48.8682L48.2324 49.04C48.2317 49.0428 48.2307 49.0454 48.23 49.0473C48.2296 49.0483 48.2295 49.0494 48.2295 49.0504C48.2295 49.0513 48.2294 49.0522 48.2291 49.0531C48.1796 49.2406 47.9867 49.3533 47.7988 49.3047C47.6109 49.2556 47.4983 49.0631 47.5466 48.875C47.5468 48.8744 47.5469 48.8737 47.5469 48.873C47.5469 48.8724 47.547 48.8718 47.5471 48.8711C47.5475 48.8694 47.5482 48.8669 47.5488 48.8643C47.5507 48.857 47.554 48.8454 47.5576 48.8311C47.5651 48.8016 47.5765 48.757 47.5908 48.6992C47.6195 48.5829 47.6612 48.4105 47.7129 48.1885C47.8165 47.7433 47.9604 47.096 48.1201 46.2949C48.4398 44.6917 48.8236 42.4689 49.0791 39.9922C49.5925 35.0153 49.579 29.0952 47.5723 25.0781C45.1886 20.3068 44.6247 17.1793 40.2295 14.1035C37.8654 12.4492 35.6745 11.4509 33.3799 11.002C31.0839 10.5529 28.6599 10.6486 25.8242 11.2148C22.4462 11.8894 19.7131 13.0619 17.4834 14.8379C15.2542 16.6137 13.5079 19.0102 12.126 22.1631C8.6425 30.1114 10.6264 37.8577 16.9219 43.8789C19.6114 46.4511 24.2672 47.6955 28.3223 48.2861C30.3377 48.5796 32.1836 48.7092 33.5244 48.7646C34.194 48.7924 34.7379 48.8013 35.1133 48.8037C35.3005 48.8049 35.4467 48.8045 35.5449 48.8037C35.5936 48.8033 35.6315 48.8031 35.6562 48.8027H35.6934C35.8875 48.799 36.0483 48.9532 36.0527 49.1475C36.0567 49.3418 35.9024 49.5024 35.708 49.5068H35.7051C35.7034 49.5069 35.7003 49.5077 35.6973 49.5078C35.6905 49.5079 35.6798 49.5076 35.667 49.5078C35.6406 49.5082 35.6012 49.5093 35.5508 49.5098C35.4492 49.5106 35.2995 49.511 35.1084 49.5098C34.7258 49.5073 34.1738 49.4978 33.4951 49.4697C32.1371 49.4135 30.2663 49.2822 28.2207 48.9844C24.1532 48.392 19.2972 47.1264 16.4346 44.3887C9.94963 38.1863 7.86428 30.1302 11.4795 21.8809C12.8975 18.6456 14.7074 16.1475 17.0439 14.2861C19.3803 12.4252 22.2247 11.2147 25.6865 10.5234Z", "M25.2275 8.20312C28.4761 7.55447 31.3003 7.43471 34.001 7.96289C36.7028 8.49139 39.2593 9.66354 41.9785 11.5664C44.4409 13.2895 46.1977 14.9478 47.5264 16.9414C48.8541 18.9336 49.7408 21.2401 50.4902 24.2402C51.7814 29.4092 51.7777 36.2035 51.458 41.6797C51.2979 44.4229 51.0576 46.8463 50.8574 48.583C50.7574 49.451 50.6667 50.1484 50.6016 50.6289C50.569 50.8688 50.5426 51.0554 50.5244 51.1816C50.5154 51.2442 50.5087 51.2927 50.5039 51.3252C50.5015 51.3411 50.4993 51.354 50.498 51.3623L50.4962 51.3735C50.4961 51.3739 50.4961 51.3742 50.4961 51.3745C50.4961 51.3748 50.4961 51.3752 50.496 51.3755C50.4664 51.5674 50.2868 51.6998 50.0947 51.6709C49.9026 51.6416 49.77 51.4617 49.7987 51.2696C49.7988 51.2689 49.799 51.2682 49.7993 51.2676C49.7996 51.2669 49.7999 51.2662 49.7999 51.2655C49.8001 51.2635 49.8003 51.2607 49.8008 51.2578C49.802 51.2499 49.8034 51.2372 49.8057 51.2217C49.8104 51.1901 49.8182 51.1428 49.8271 51.0811C49.8451 50.9567 49.8711 50.7721 49.9033 50.5342C49.9679 50.0578 50.0568 49.3649 50.1562 48.502C50.3553 46.7751 50.5947 44.3655 50.7539 41.6387C51.0729 36.1742 51.0693 29.4701 49.8057 24.4111C49.0669 21.4536 48.2065 19.2317 46.9404 17.332C45.6753 15.4338 43.9904 13.8354 41.5742 12.1445C38.9159 10.2843 36.45 9.16077 33.8662 8.65527C31.2811 8.14967 28.553 8.25803 25.3652 8.89453C21.5672 9.65301 18.4915 10.9714 15.9814 12.9707C13.4717 14.97 11.5071 17.6674 9.95312 21.2129C6.02576 30.1741 7.84024 39.3717 15.3311 45.6289C18.4978 48.2739 23.7525 49.6726 28.2754 50.4033C30.5261 50.7669 32.577 50.9621 34.0645 51.0664C34.8076 51.1185 35.4103 51.1487 35.8262 51.165C36.0339 51.1732 36.1958 51.1778 36.3047 51.1807C36.3586 51.1821 36.4002 51.183 36.4277 51.1836C36.4413 51.1839 36.4522 51.1845 36.459 51.1846H36.4688C36.6631 51.1877 36.819 51.3477 36.8164 51.542C36.8136 51.7364 36.6533 51.892 36.459 51.8896H36.4463C36.4389 51.8895 36.4271 51.889 36.4131 51.8887C36.3842 51.8881 36.3413 51.8872 36.2861 51.8857C36.1743 51.8828 36.0088 51.8774 35.7979 51.8691C35.3756 51.8526 34.7657 51.8232 34.0146 51.7705C32.5121 51.6651 30.4398 51.4674 28.1631 51.0996C23.6299 50.3672 18.2044 48.9476 14.8789 46.1699C7.12945 39.6967 5.26307 30.1561 9.30664 20.9297C10.8966 17.302 12.9249 14.5037 15.542 12.4189C18.1588 10.3345 21.3455 8.97835 25.2275 8.20312Z", "M24.7402 5.73242C28.4862 4.98444 31.635 4.8511 34.6143 5.44629C37.5945 6.04178 40.3806 7.36143 43.4102 9.48145C46.2501 11.4688 48.224 13.3816 49.6885 15.6182C51.1516 17.8529 52.093 20.3908 52.8965 23.6074C54.3364 29.372 54.3334 36.9522 53.9766 43.0654C53.7978 46.1269 53.5291 48.8312 53.3057 50.7695C53.194 51.7385 53.0932 52.5175 53.0205 53.0537C52.9842 53.3213 52.9549 53.5291 52.9346 53.6699C52.9244 53.7401 52.9165 53.7948 52.9111 53.8311C52.9085 53.8487 52.9067 53.8629 52.9053 53.8721C52.9048 53.8755 52.9041 53.8789 52.9036 53.8813C52.9034 53.8823 52.9033 53.8833 52.9033 53.8843C52.9033 53.8853 52.9032 53.8862 52.9031 53.8871C52.8731 54.0785 52.6936 54.2103 52.502 54.1816C52.3097 54.1524 52.1772 53.9729 52.206 53.7807C52.206 53.7804 52.2061 53.7801 52.2061 53.7798C52.2061 53.7795 52.2061 53.7791 52.2061 53.7788L52.208 53.7676C52.2093 53.7588 52.2113 53.7447 52.2139 53.7275C52.2191 53.6922 52.2263 53.6385 52.2363 53.5693C52.2564 53.4304 52.2862 53.2246 52.3223 52.959C52.3944 52.427 52.4944 51.6532 52.6055 50.6895C52.8277 48.7609 53.0947 46.0698 53.2725 43.0244C53.6286 36.9228 53.6243 29.4329 52.2119 23.7783C51.4181 20.6004 50.5015 18.1465 49.0986 16.0039C47.6969 13.8631 45.7958 12.011 43.0059 10.0586C40.0317 7.97736 37.3346 6.70894 34.4756 6.1377C31.6155 5.56636 28.5654 5.68752 24.8779 6.42383C20.6326 7.27163 17.1924 8.74617 14.3838 10.9834C11.5756 13.2205 9.37761 16.2371 7.64062 20.2002C3.25699 30.2025 5.75853 39.9522 13.6748 47.5234C17.0684 50.769 22.9295 52.3327 28.0146 53.0732C30.5448 53.4417 32.8609 53.6032 34.5439 53.6729C35.3849 53.7077 36.0684 53.7196 36.54 53.7227C36.7755 53.7242 36.9594 53.7237 37.083 53.7227C37.1442 53.7222 37.1914 53.7221 37.2227 53.7217C37.2378 53.7214 37.2501 53.7208 37.2578 53.7207H37.2695C37.4638 53.717 37.6245 53.8712 37.6289 54.0654C37.633 54.2599 37.4786 54.4213 37.2842 54.4258H37.2334C37.2006 54.4263 37.1518 54.4272 37.0889 54.4277C36.9619 54.4288 36.7744 54.4293 36.5352 54.4277C36.0564 54.4246 35.3655 54.4131 34.5156 54.3779C32.8154 54.3076 30.4736 54.1434 27.9131 53.7705C22.8156 53.0281 16.7542 51.4443 13.1875 48.0332C5.08178 40.2808 2.4797 30.2213 6.99512 19.918C8.76812 15.8726 11.0288 12.7542 13.9443 10.4316C16.8597 8.10939 20.4109 6.59696 24.7402 5.73242Z", "M24.2832 3.41211C28.2585 2.61835 31.7094 2.47231 35.0068 3.11719C38.3056 3.76244 41.4293 5.19463 44.7559 7.52246C47.8713 9.70265 50.0348 11.7993 51.6396 14.25C53.2434 16.6993 54.2764 19.4826 55.1582 23.0127C56.7378 29.3368 56.7336 37.6555 56.3418 44.3672C56.1456 47.728 55.8517 50.6964 55.6064 52.8242C55.4838 53.8879 55.3728 54.7425 55.293 55.3311C55.2531 55.625 55.2215 55.8533 55.1992 56.0078C55.1881 56.0847 55.1788 56.1439 55.1729 56.1836C55.17 56.2029 55.1685 56.2184 55.167 56.2285C55.1664 56.2326 55.1657 56.2365 55.1652 56.2392C55.1651 56.2399 55.1649 56.2406 55.1647 56.2412L55.1643 56.2425C55.1641 56.243 55.1641 56.2434 55.1641 56.2438C55.1641 56.244 55.164 56.2442 55.164 56.2444C55.1345 56.4365 54.9548 56.5689 54.7627 56.54C54.5705 56.5107 54.438 56.3314 54.4667 56.1393C54.4668 56.1389 54.4669 56.1385 54.4672 56.1382C54.4676 56.1379 54.4678 56.1374 54.4678 56.1369V56.1348C54.4681 56.1324 54.4681 56.1284 54.4688 56.124C54.4702 56.1143 54.4728 56.0991 54.4756 56.0801C54.4813 56.0413 54.49 55.983 54.501 55.9072C54.523 55.7546 54.5552 55.5282 54.5947 55.2363C54.674 54.6519 54.7833 53.8017 54.9053 52.7432C55.1494 50.6252 55.4424 47.6707 55.6377 44.3262C56.0288 37.6261 56.0258 29.3977 54.4736 23.1836C53.6015 19.6923 52.5931 16.9938 51.0498 14.6367C49.5077 12.2817 47.4171 10.2458 44.3516 8.10059C41.0859 5.81538 38.0529 4.4318 34.8721 3.80957C31.6901 3.18721 28.3355 3.32187 24.4209 4.10352C15.149 5.95508 10.4604 11.2744 5.44629 19.2949C-0.877934 29.4114 3.36465 40.9321 12.1025 49.2891C15.8371 52.8607 22.2823 54.5784 27.8662 55.3916C30.6459 55.7964 33.1902 55.9743 35.0391 56.0508C35.963 56.089 36.7143 56.1011 37.2324 56.1045C37.491 56.1062 37.6923 56.1056 37.8281 56.1045C37.8958 56.1039 37.948 56.104 37.9824 56.1035C37.9994 56.1033 38.013 56.1027 38.0215 56.1025H38.0332L38.1045 56.1074C38.2657 56.1369 38.3897 56.2771 38.3936 56.4473C38.3977 56.6417 38.2432 56.8031 38.0488 56.8076H38.0342C38.025 56.8078 38.0108 56.8083 37.9932 56.8086C37.9572 56.8091 37.9033 56.81 37.834 56.8105C37.6948 56.8117 37.4898 56.8122 37.2275 56.8105C36.7022 56.8071 35.9436 56.7935 35.0107 56.7549C33.1447 56.6777 30.5747 56.4981 27.7646 56.0889C22.1684 55.2739 15.523 53.5359 11.6152 49.7988C2.7612 41.3308 -1.73139 29.4465 4.84766 18.9219C9.89793 10.8434 14.7247 5.32086 24.2832 3.41211Z", "M5.47832 13.0985C5.76523 13.0921 5.93892 13.4154 5.7804 13.6546C4.863 15.039 4.02917 16.5747 3.27734 18.29C-1.98239 30.2914 1.02106 41.9915 10.5146 51.0713C14.5935 54.972 21.6284 56.8449 27.7158 57.7314C30.7473 58.1729 33.5219 58.3667 35.5381 58.4502C36.5457 58.4919 37.3645 58.5061 37.9297 58.5098C38.2119 58.5116 38.4318 58.511 38.5801 58.5098C38.6538 58.5092 38.7105 58.5084 38.748 58.5078C38.7666 58.5075 38.7817 58.508 38.791 58.5078C38.7951 58.5077 38.7987 58.5069 38.8008 58.5068H38.8037L38.8398 58.5078C39.0177 58.5223 39.16 58.6703 39.1641 58.8525C39.1679 59.0467 39.0135 59.2074 38.8193 59.2119H38.8037C38.7937 59.2121 38.7781 59.2126 38.7588 59.2129C38.7197 59.2135 38.6613 59.2142 38.5859 59.2148C38.4344 59.2161 38.2108 59.2167 37.9248 59.2148C37.3524 59.2111 36.5255 59.1973 35.5088 59.1553C33.4755 59.0711 30.676 58.8755 27.6143 58.4297C21.5144 57.5414 14.2794 55.6474 10.0273 51.5811C0.34422 42.3201 -2.76085 30.3093 2.63086 18.0068C3.40012 16.2517 4.25327 14.6755 5.19609 13.2535C5.25898 13.1586 5.36454 13.101 5.47832 13.0985Z", "M23.7881 1.07812C31.9488 -1.3805 38.8629 0.471227 46.1133 5.54492C49.5074 7.92014 51.8628 10.2036 53.6094 12.8711C55.3546 15.5367 56.4787 18.5661 57.4395 22.4121C59.1602 29.3008 59.1566 38.3649 58.7295 45.6807C58.5156 49.3436 58.195 52.5794 57.9277 54.8984C57.7942 56.0575 57.6739 56.9885 57.5869 57.6299C57.5435 57.9503 57.5087 58.1998 57.4844 58.3682C57.4723 58.4519 57.4625 58.5164 57.4561 58.5596C57.4529 58.5807 57.4499 58.5974 57.4482 58.6084C57.4476 58.6125 57.447 58.6164 57.4466 58.6192C57.4464 58.6204 57.4463 58.6217 57.4463 58.623C57.4463 58.6243 57.4462 58.6257 57.446 58.6269C57.4158 58.8183 57.2357 58.9499 57.0439 58.9209C56.8524 58.8916 56.7209 58.7129 56.7487 58.5214C56.7489 58.5202 56.749 58.5189 56.749 58.5176C56.749 58.5163 56.7491 58.515 56.7494 58.5137C56.7498 58.5111 56.7504 58.5077 56.751 58.5039C56.7526 58.4933 56.7547 58.4768 56.7578 58.4561C56.7641 58.4137 56.7742 58.3496 56.7861 58.2666C56.8102 58.1001 56.8446 57.8532 56.8877 57.5352C56.9741 56.8979 57.0936 55.9714 57.2266 54.8174C57.4927 52.5081 57.8125 49.2864 58.0254 45.6396C58.4518 38.3355 58.4482 29.3618 56.7549 22.583C55.8038 18.7756 54.7046 15.8303 53.0195 13.2568C51.3356 10.6851 49.0523 8.46332 45.708 6.12305C38.586 1.13928 31.8942 -0.628095 23.9912 1.75293C18.9998 3.25688 14.8599 5.02866 11.4512 7.60059C9.7672 8.87124 8.25786 10.3414 6.91038 12.0761C6.84392 12.1617 6.74262 12.2133 6.63429 12.2157C6.3385 12.2221 6.16519 11.8876 6.34659 11.6539C7.73262 9.86795 9.28828 8.3503 11.0273 7.03809C14.5302 4.39519 18.7587 2.59352 23.7881 1.07812Z"];
+function logoSVG(cls,sweep){
+  const g=LOGO_D.map((d,i)=>'<g style="--i:'+i+'"><path d="'+d+'"/></g>').join('');
+  return '<svg class="'+cls+'" viewBox="0 0 59 60" aria-hidden="true" focusable="false" fill="currentColor">'+
+   (sweep?'<defs><mask id="lgm" maskUnits="userSpaceOnUse" x="-10" y="-10" width="80" height="80"><circle class="lgw" cx="29.5" cy="32" r="20" fill="none" stroke="#fff" stroke-width="40" stroke-dasharray="125.7" stroke-dashoffset="125.7" transform="rotate(-90 29.5 32)"/></mask></defs><g mask="url(#lgm)">'+g+'</g>':g)+'</svg>';
+}
+function ringBloom(x,y,size,z){
+  if(RM)return;
+  const d=document.createElement('div');d.className='bloom';d.style.cssText='left:'+x+'px;top:'+y+'px;width:'+size+'px;z-index:'+(z||45);
+  d.innerHTML=logoSVG('lgk');document.body.appendChild(d);setTimeout(()=>d.remove(),1600);
+}
+function bagPulse(el){
+  if(RM||!el)return;
+  if(el.animate)el.animate([{transform:'scale(1)'},{transform:'scale(1.22)',offset:.35},{transform:'none'}],{duration:620,easing:'cubic-bezier(.2,.7,.2,1)'});
+}
+{const i0=document.getElementById('intro');if(i0)i0.innerHTML=logoSVG('lgi',true)}
+// header injected into every page
+cards.forEach(c=>{
+  const first=c.dataset.p==='cases';
+  const left=first?'<span class="po">dé keepsake smith</span><span class="mo">New season<br>Nov ’26</span>':'<span class="po">dé keepsake smith</span>';
+  c.querySelector('.in').insertAdjacentHTML('afterbegin',
+   '<div class="hd"><a class="nm" href="#cases">'+left+'</a>'+
+   '<a class="lg" href="#cases" aria-label="dé keepsake smith home">'+logoSVG('lgs')+'</a>'+
+   '<nav class="mn"><a href="#menu"><span class="rl"><i data-t="Menu">Menu</i></span></a><a href="mailto:hello@dekeepsakesmith.com" data-contact aria-haspopup="dialog"><span class="rl"><i data-t="Contact">Contact</i></span></a></nav>'+'<button type="button" class="bag" data-bag>Bag (<span class="bn">0</span>)</button>'+
+   '<div class="tt"><button type="button" class="ttb" aria-label="Back to the current time">Time travel<span class="x">↺</span></button><br><span class="clk"></span><span class="phase"></span></div>'+
+   '<div class="dial"><i></i></div></div>');
+});
+
+// archive tiles
+const tiles=[[.147,'#8b8576','box'],[.147,'#cfa57e','lk'],[.147,'#b9b3a3',''],[.135,'#26262a','box'],[.226,'#9b9588','lk'],[.147,'#6f6a5e',''],[.147,'#d8d1c2','box'],[.147,'#a99f8c','lk']];
+const ARCH=[['The heirloom box','2021','A keepsake box made to hold letters and small things, finished so it can be handed down.'],['Name and date locket','2021','A locket engraved with a name and a date, made to be worn close.'],['Wedding favours','2022','Small matching pieces made in numbers for a single day.'],['Corporate gifting','2022','Considered gifts made in batches for teams and clients.'],['First year charm','2023','A small charm marking the first year.'],['Signet study','2024','An exploration of lettering on a classic signet.'],['Family locket','2025','A larger locket made to hold more than one story.'],['Season pieces','2026','Selected pieces from the latest season.']];
+document.getElementById('arch-strip').innerHTML=tiles.map((t,k)=>
+  '<figure tabindex="0" role="link" data-i="'+k+'" style="width:calc(var(--W)*'+t[0]+')"><figcaption><span>'+ARCH[k][0]+'</span><span>'+ARCH[k][1]+'</span></figcaption><div class="ph" data-slot="a'+k+'" role="img" aria-label="'+ARCH[k][0]+'" style="background:'+t[1]+'">'+(t[2]?'<u class="'+t[2]+'" style="width:'+(t[2]=='box'?'40':'44')+'%"></u>':'')+'</div></figure>').join('');
+
+function layout(){
+  const W=innerWidth,H=innerHeight,n=W<700,cw=(n?.62:.39)*W,gap=.06*W,N=order.length,s=n?.5:Math.min(.72,.92*W/(N*cw+(N-1)*gap));
+  const r=document.documentElement.style;
+  r.setProperty('--W',W+'px');r.setProperty('--H',H+'px');r.setProperty('--gap',gap+'px');
+  const i=order.indexOf(cur);
+  if(mode==='menu'){
+    world.style.setProperty('--cw',cw+'px');
+    const tx=n?W/2-(i*(cw+gap)+cw/2)*s:(W-(N*cw+(N-1)*gap)*s)/2;
+    world.style.transform='translate('+tx+'px,'+(H-H*s)/2+'px) scale('+s+')';
+  }else{
+    world.style.setProperty('--cw',W+'px');
+    world.style.transform='translate('+(-i*(W+gap))+'px,0) scale(1)';
+  }
+}
+function route(){
+  const h=location.hash.slice(1);
+  if(h==='menu')mode='menu';
+  else{mode='page';cur=order.includes(h)?h:'cases';}
+  document.body.dataset.mode=mode;
+  cards.forEach(c=>c.classList.toggle('on',c.dataset.p===cur));
+  if(mode==='menu')cards.forEach(c=>c.querySelector('.page').scrollTop=0);
+  layout();
+}
+cards.forEach(c=>c.addEventListener('click',()=>{if(mode==='menu')location.hash=c.dataset.p}));
+addEventListener('hashchange',route);
+addEventListener('resize',layout);
+function overlayOpen(){return ['lb','gf','ct'].some(i=>{const e=document.getElementById(i);return e&&e.classList.contains('open')})}
+addEventListener('keydown',e=>{if(e.key==='Escape'&&mode==='page'&&!pdpOpen()&&!bagOpen()&&!overlayOpen())location.hash='menu'});
+
+// logo / name: from any other page, zoom out to the menu, move to the home card, then zoom into it
+let homeTok=0;
+document.addEventListener('click',e=>{
+  const a=e.target.closest('.hd .nm,.hd .lg');
+  if(!a||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button)return;
+  e.preventDefault();
+  if(pdpOpen()){location.hash='cases';return}
+  const tok=++homeTok,pg=document.querySelector('[data-p="cases"] .page');
+  if(mode==='page'&&cur==='cases'){const P=document.querySelector('[data-p="cases"] .page');if(P&&P.scrollTop>0)P.scrollTo({top:0,behavior:RM?'auto':'smooth'});return}
+  if(RM){location.hash='cases';return}
+  const T=(parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--t'))||1.1)*1000,narrow=innerWidth<700;
+  const live=()=>tok===homeTok&&location.hash==='#menu';
+  if(mode!=='menu')location.hash='menu';
+  setTimeout(()=>{
+    if(!live())return;
+    cur='cases';cards.forEach(c=>c.classList.toggle('on',c.dataset.p==='cases'));layout();
+    setTimeout(()=>{if(live())location.hash='cases'},narrow?T*.85:380);
+  },T+120);
+});
+
+// horizontal strips: eased wheel + drag with momentum, velocity skew, counter
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const cnt=document.getElementById('cnt');
+document.querySelectorAll('.strip').forEach(s=>{
+  const st={t:0,pos:0,vel:0,dv:0,down:false,x0:0,l0:0,raf:0};
+  const max=()=>Math.max(0,s.scrollWidth-s.clientWidth);
+  const clamp=v=>Math.max(0,Math.min(max(),v));
+  function counter(){
+    if(s.id!=='cases-strip'||!cnt)return;
+    const f=[...s.children],pad=parseFloat(getComputedStyle(s).paddingLeft)||0;
+    if(!f.length)return;
+    let k=0,best=1e9;f.forEach((el,i)=>{const d=Math.abs(el.offsetLeft-pad-st.pos);if(d<best){best=d;k=i}});
+    const z=n=>String(n).padStart(2,'0');
+    cnt.textContent=z(k+1)+' / '+z(f.length);
+  }
+  function step(){
+    if(!st.down){st.t=clamp(st.t+st.vel);st.vel*=.94;if(Math.abs(st.vel)<.1)st.vel=0}
+    const d=st.t-st.pos;
+    st.pos=RM?st.t:st.pos+d*.14;
+    s.scrollLeft=st.pos;
+    const sk=RM?0:Math.max(-4,Math.min(4,d*.03));
+    s.querySelectorAll('.ph').forEach(p=>{p.style.transform=Math.abs(sk)>.05?'skewX('+(-sk)+'deg)':''});
+    counter();
+    if(Math.abs(d)>.4||st.vel||st.down)st.raf=requestAnimationFrame(step);
+    else{st.raf=0;st.pos=st.t;s.scrollLeft=st.pos;s.querySelectorAll('.ph').forEach(p=>{p.style.transform=''})}
+  }
+  const kick=()=>{if(!st.raf)st.raf=requestAnimationFrame(step)};
+  s._go=x=>{st.t=clamp(x);st.vel=0;kick()};
+  s.addEventListener('scroll',()=>{if(Math.abs(s.scrollLeft-st.pos)>2){st.pos=st.t=s.scrollLeft;counter()}});
+  s.addEventListener('wheel',e=>{if(mode!=='page')return;if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){st.t=clamp(st.t+e.deltaY);st.vel=0;kick();e.preventDefault()}},{passive:false});
+  s.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse')return;st.down=true;st.x0=e.clientX;st.l0=s.scrollLeft;st.t=st.pos=s.scrollLeft;st.vel=0;st.dv=0;s.classList.add('drag');kick()});
+  addEventListener('pointermove',e=>{if(!st.down)return;const nt=clamp(st.l0-(e.clientX-st.x0));st.dv=st.dv*.6+(nt-st.t)*.4;st.t=nt});
+  addEventListener('pointerup',()=>{if(!st.down)return;st.down=false;s.classList.remove('drag');st.vel=RM?0:st.dv*1.2;kick()});
+  requestAnimationFrame(kick);
+});
+
+// time of day dial: a 24 hour clock that re-colours the whole site
+const STOPS=[[0,[26,26,24],[241,238,232],[43,42,37],'Night'],[.125,[233,214,208],[43,26,30],[150,122,120],'Dawn'],[.333,[246,244,240],[17,17,17],[131,127,106],'Day'],[.54,[240,214,170],[44,26,8],[140,104,56],'Golden hour'],[.667,[52,36,60],[244,226,232],[34,24,40],'Dusk'],[.8,[26,26,24],[241,238,232],[43,42,37],'Night'],[1,[26,26,24],[241,238,232],[43,42,37],'Night']];
+const mix=(a,b,t)=>a.map((v,i)=>Math.round(v+(b[i]-v)*t));
+const LITE={Night:[.9,0,.92,0],Dawn:[.99,.14,1.02,-6],Day:[1.05,0,1.08,0],'Golden hour':[1.03,.3,1.2,-8],Dusk:[.93,.18,.96,-16]};
+function seg(t){let i=0;while(i<STOPS.length-2&&t>STOPS[i+1][0])i++;const a=STOPS[i],b=STOPS[i+1];return[a,b,Math.min(1,Math.max(0,(t-a[0])/((b[0]-a[0])||1)))]}
+function PH(t){const s=seg(t);return(s[2]<.5?s[0]:s[1])[4]}
+const nowT=()=>{const d=new Date();return(((d.getHours()+d.getMinutes()/60)-4+24)%24)/24};
+let T=nowT(),trav=false,lastPh='';
+try{const q=sessionStorage.getItem('dks-t2');if(q!==null){T=parseFloat(q)||0;trav=true}}catch(e){}
+function tick(){
+  const d=new Date();let hh=d.getHours(),mm=d.getMinutes();
+  if(trav){const x=(T*24+4)%24;hh=Math.floor(x);mm=Math.floor((x-hh)*60)}
+  const h=String(hh).padStart(2,'0'),m=String(mm).padStart(2,'0');
+  document.querySelectorAll('.clk').forEach(e=>e.innerHTML=h+'&nbsp;<span class="bl">.</span>&nbsp;'+m);
+  document.querySelectorAll('.phase').forEach(e=>e.textContent=PH(T));
+  document.querySelectorAll('.ttb .x').forEach(e=>e.style.opacity=trav?1:.35);
+}
+function theme(){
+  const r=document.documentElement.style,s=seg(T);
+  [['paper',1],['ink',2],['olive',3]].forEach(k=>r.setProperty('--'+k[0],'rgb('+mix(s[0][k[1]],s[1][k[1]],s[2]).join(',')+')'));
+  {const la=LITE[s[0][4]],lb=LITE[s[1][4]],lm=la.map((v,i)=>v+(lb[i]-v)*s[2]);r.setProperty('--lite','brightness('+lm[0].toFixed(3)+') sepia('+lm[1].toFixed(3)+') saturate('+lm[2].toFixed(3)+') hue-rotate('+lm[3].toFixed(1)+'deg)')}
+  const ang=(-90+T*360)*Math.PI/180;
+  document.querySelectorAll('.dial').forEach(d=>{const R=d.clientWidth*.39,i=d.querySelector('i');if(i)i.style.transform='translate('+Math.cos(ang)*R+'px,'+Math.sin(ang)*R+'px)'});
+  const p=PH(T);if(p!==lastPh){if(lastPh&&trav&&navigator.vibrate){try{navigator.vibrate(6)}catch(e){}}lastPh=p}
+  tick();
+}
+let dg=null;
+document.addEventListener('pointerdown',e=>{const d=e.target.closest&&e.target.closest('.dial');if(!d)return;const b=d.getBoundingClientRect(),cx=b.left+b.width/2,cy=b.top+b.height/2;dg={cx:cx,cy:cy,a:Math.atan2(e.clientY-cy,e.clientX-cx)};d.setPointerCapture(e.pointerId);e.preventDefault()});
+document.addEventListener('pointermove',e=>{if(!dg)return;const a=Math.atan2(e.clientY-dg.cy,e.clientX-dg.cx);let da=a-dg.a;if(da>Math.PI)da-=2*Math.PI;if(da<-Math.PI)da+=2*Math.PI;dg.a=a;T=((T+da/(2*Math.PI))%1+1)%1;trav=true;theme()});
+document.addEventListener('pointerup',()=>{if(dg){dg=null;try{sessionStorage.setItem('dks-t2',T)}catch(e){}}});
+function goNow(){
+  const target=nowT();let d=target-T;if(d>.5)d-=1;if(d<-.5)d+=1;
+  const end=()=>{T=target;trav=false;try{sessionStorage.removeItem('dks-t2')}catch(e){}theme()};
+  if(RM){end();return}
+  const t0=performance.now(),from=T;
+  const run=n=>{const k=Math.min(1,(n-t0)/900),e=1-Math.pow(1-k,3);T=((from+d*e)%1+1)%1;theme();if(k<1)requestAnimationFrame(run);else end()};
+  requestAnimationFrame(run);
+}
+document.addEventListener('click',e=>{if(e.target.closest('.ttb'))goNow()});
+theme();setInterval(tick,1000);
+
+// home: jewellery tiles
+const P=[['Signet ring',85000,'ring'],['Pendant necklace',64000,'pendant'],['Charm bracelet',72000,'bracelet'],['Engraved locket',98000,'locket'],['Hoop earrings',48000,'hoops'],['Birthstone ring',79000,'ring'],['Initial hoops',52000,'hoops'],['Family locket',105000,'locket'],['Ruby drop pendant',68000,'pendant'],['Cuff bracelet',91000,'bracelet'],['Emerald ring',88000,'ring'],['Everyday hoops',56000,'hoops'],['Sapphire pendant',71000,'pendant'],['Long chain pendant',82000,'pendant']].map((x,i)=>({n:x[0],p:x[1],t:x[2],s:'c'+i,id:x[0].toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}));
+for(let i=5;i<=12;i++)IMG['c'+i]=IMG['a'+(i-5)];IMG.c13=IMG.p0;
+Object.assign(IMG,{c0:'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1400&h=1600&q=85',c1:'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1400&h=1600&q=85',c2:'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1400&h=1600&q=85',c3:'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1400&h=1600&q=85',c4:'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1400&h=1600&q=85',c5:'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1400&h=1600&q=85',c6:'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1400&h=1600&q=85',c7:'https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=1400&h=1600&q=85',c8:'https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=1400&h=1600&q=85',c9:'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1400&h=1600&q=85',c10:'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1400&h=1600&q=85',c11:'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1400&h=1600&q=85',c12:'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1400&h=1600&q=85',c13:'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1400&h=1600&q=85',a0:'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&h=1400&q=85',a1:'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&h=1400&q=85',a2:'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&h=1400&q=85',a3:'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&h=1400&q=85',a4:'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=85',a5:'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&h=1400&q=85',a6:'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1200&h=1400&q=85',a7:'https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=1200&h=1400&q=85',p0:'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&h=1500&q=85'});
+const fmt=n=>'₦'+n.toLocaleString('en-US');
+document.getElementById('cases-strip').innerHTML=P.map((p,i)=>'<figure tabindex="0" role="link" data-id="'+p.id+'" style="--k:'+i+'"><figcaption><span>'+p.n+'</span><span>'+fmt(p.p)+'</span></figcaption><div class="ph '+'abcd'[i%4]+'" data-slot="'+p.s+'" role="img" aria-label="'+p.n+'"></div></figure>').join('');
+
+// photo slots: add your own images, saved in this browser
+function idb(){return new Promise((res,rej)=>{try{const r=indexedDB.open('dks',1);r.onupgradeneeded=()=>r.result.createObjectStore('i');r.onsuccess=()=>res(r.result);r.onerror=()=>rej()}catch(e){rej()}})}
+async function idbGet(k){try{const d=await idb();return await new Promise(res=>{const q=d.transaction('i').objectStore('i').get(k);q.onsuccess=()=>res(q.result);q.onerror=()=>res()})}catch(e){}}
+async function idbSet(k,v){try{const d=await idb();d.transaction('i','readwrite').objectStore('i').put(v,k)}catch(e){}}
+function paint(el,u){el.style.backgroundImage='url('+u+')';el.style.backgroundSize='cover';el.style.backgroundPosition='center';el.classList.add('has')}
+async function shrink(f){const b=await createImageBitmap(f);const k=Math.min(1,1400/Math.max(b.width,b.height));const c=document.createElement('canvas');c.width=b.width*k;c.height=b.height*k;c.getContext('2d').drawImage(b,0,0,c.width,c.height);return c.toDataURL('image/jpeg',.85)}
+const pick=document.createElement('input');pick.type='file';pick.accept='image/*';pick.hidden=true;document.body.appendChild(pick);
+let target=null;
+pick.addEventListener('change',async()=>{const f=pick.files[0];if(!f||!target)return;try{const u=await shrink(f);document.querySelectorAll('[data-slot="'+target.dataset.slot+'"]').forEach(e=>paint(e,u));idbSet(target.dataset.slot,u)}catch(e){}pick.value=''});
+const EDIT=/[?&]edit\b/.test(location.search);
+function loadSlot(el){idbGet(el.dataset.slot).then(u=>{u=u||(window.IMG||{})[el.dataset.slot];if(u)paint(el,u)})}
+const slotIO='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){slotIO.unobserve(e.target);loadSlot(e.target)}}),{rootMargin:'400px'}):null;
+document.querySelectorAll('[data-slot]').forEach(el=>{
+  if(EDIT){const b=document.createElement('button');b.type='button';b.className='add';b.textContent='Add photo';b.addEventListener('click',e=>{e.stopPropagation();target=el;pick.click()});el.appendChild(b)}
+  if(slotIO)slotIO.observe(el);else loadSlot(el);
+});
+
+// ---- product page + bag ----
+const pdp=document.getElementById('pdp'),acc=document.getElementById('acc'),bagEl=document.getElementById('bag'),scrim=document.getElementById('scrim'),bbody=document.getElementById('bbody'),bfoot=document.getElementById('bfoot');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+pdp.querySelector('.pin').insertAdjacentHTML('afterbegin',cards[1].querySelector('.hd').outerHTML);
+const DET={ring:'A hand-finished band with a smooth, comfortable inner curve. Sizes 5 to 10, with free resizing within 30 days.',pendant:'A pendant on a fine 18 inch chain with a lobster clasp and a 2 inch extender, so it sits where you like.',bracelet:'An adjustable bracelet that fits most wrists, finished by hand and polished to a soft shine.',locket:'A locket that opens to hold two small photos or a folded note. Fine chain included.',hoops:'A pair of lightweight hoops with secure hinged backs, light enough to wear all day.'};
+let lastRect=null,curP=null,d0=[0,0];
+const eg={style:'script',n:0};
+pdp.querySelector('.pimg').insertAdjacentHTML('beforeend','<div class="plate" aria-hidden="true"></div>');
+function renderEng(){
+  const inp=pdp.querySelector('#eng'),v=inp?inp.value:'',pl=pdp.querySelector('.plate'),prev=eg.n;
+  pl.className='plate '+eg.style+(v?' on':'');
+  pl.innerHTML=[...v].map((c,i)=>'<i'+(i<prev?' style="animation:none"':'')+'>'+(c===' '?'&nbsp;':esc(c))+'</i>').join('');
+  eg.n=v.length;
+}
+function buildAcc(p){
+  const it=[['Details',DET[p.t]],['Materials &amp; care','Sterling silver with 18k gold plating. Keep it dry, wipe with a soft cloth and store it in the pouch it comes in.'],['Engraving','<input id="eng" maxlength="20" placeholder="Name or date" aria-label="Engraving text"><span class="eg"><button type="button" class="on" data-es="script">Script</button><button type="button" data-es="sans">Sans</button></span><span class="dim">Up to 20 characters. Added to your order as a note.</span>'],['Shipping &amp; returns','Made to order and shipped in 5 to 7 working days. Engraved pieces are final sale. Other pieces can be returned within 14 days.']];
+  if(p.t==='ring')it.splice(3,0,['Ring size','<span class="dim">Inner diameter. Measure a ring that fits you well.</span><div class="sz"><span>US 5</span><span>15.7 mm</span><span>US 6</span><span>16.5 mm</span><span>US 7</span><span>17.3 mm</span><span>US 8</span><span>18.1 mm</span><span>US 9</span><span>18.9 mm</span><span>US 10</span><span>19.8 mm</span></div>']);
+  acc.innerHTML=it.map((x,k)=>'<div class="ai'+(x[0]==='Engraving'?' o':'')+'"><button type="button" class="ah" aria-expanded="'+(x[0]==='Engraving')+'"><span>'+x[0]+'</span><i>+</i></button><div class="ap"><div><div>'+x[1]+'</div></div></div></div>').join('');
+}
+acc.addEventListener('input',e=>{if(e.target.id==='eng')renderEng()});
+acc.addEventListener('click',e=>{const q=e.target.closest('[data-es]');if(q){eg.style=q.dataset.es;acc.querySelectorAll('[data-es]').forEach(x=>x.classList.toggle('on',x===q));renderEng();return}const b=e.target.closest('.ah');if(!b)return;const it=b.parentNode,o=!it.classList.contains('o');acc.querySelectorAll('.ai').forEach(a=>{a.classList.remove('o');a.firstChild.setAttribute('aria-expanded','false')});if(o){it.classList.add('o');b.setAttribute('aria-expanded','true')}});
+function openP(p){
+  curP=p;
+  pdp.querySelector('.pname').textContent=p.n;
+  pdp.querySelector('#pp').textContent=fmt(p.p);
+  pdp.querySelector('#pm').textContent='Sterling silver, 18k gold plating';
+  buildAcc(p);
+  const im=pdp.querySelector('.pimg');im.dataset.slot=p.s;im.classList.remove('has');im.style.backgroundImage='';
+  const tile=document.querySelector('#cases-strip [data-slot="'+p.s+'"]');
+  if(tile&&tile.style.backgroundImage){paint(im,tile.style.backgroundImage.slice(5,-2))}
+  eg.style='script';eg.n=0;renderEng();
+  idbGet(p.s).then(u=>{u=u||IMG[p.s];if(u&&curP===p)paint(im,u)});
+  const r=lastRect||{left:innerWidth/2,top:innerHeight/2,width:0,height:0};
+  pdp.style.transformOrigin=(r.left+r.width/2)+'px '+(r.top+r.height/2)+'px';
+  pdp.setAttribute('aria-hidden','false');pdp.classList.add('open');pdp.scrollTop=0;setView(0);fillPairs(p);
+}
+function closeP(){pdp.classList.remove('open');pdp.setAttribute('aria-hidden','true');curP=null}
+const VTok=()=>document.startViewTransition&&!matchMedia('(prefers-reduced-motion:reduce)').matches;
+function pdpRoute(){const p=P.find(x=>x.id===location.hash.slice(1));if(p){if(!curP||curP.id!==p.id){if(curP&&VTok())document.startViewTransition(()=>openP(p));else openP(p)}}else if(pdpOpen())closeVT();else closeP()}
+function closeVT(){
+  const pid=curP&&curP.id,fig=pid&&document.querySelector('#cases-strip [data-id="'+pid+'"]'),pim=pdp.querySelector('.pimg');
+  if(!VTok()||!fig){closeP();return}
+  const ph=fig.querySelector('.ph'),root=document.documentElement;
+  pim.style.viewTransitionName='pimg';root.classList.add('vt');
+  const t=document.startViewTransition(()=>{pim.style.viewTransitionName='';ph.style.viewTransitionName='pimg';closeP()});
+  t.finished.finally(()=>{ph.style.viewTransitionName='';root.classList.remove('vt')});
+}
+addEventListener('hashchange',pdpRoute);
+const strip=document.getElementById('cases-strip');
+strip.addEventListener('pointerdown',e=>{d0=[e.clientX,e.clientY]},true);
+function openFig(f){
+  lastRect=f.getBoundingClientRect();
+  const p=P.find(x=>x.id===f.dataset.id);
+  if(!p||!VTok()){location.hash=f.dataset.id;return}
+  const ph=f.querySelector('.ph'),pim=pdp.querySelector('.pimg'),root=document.documentElement;
+  ph.style.viewTransitionName='pimg';root.classList.add('vt');
+  const t=document.startViewTransition(()=>{ph.style.viewTransitionName='';pim.style.viewTransitionName='pimg';openP(p);location.hash=p.id});
+  t.finished.finally(()=>{pim.style.viewTransitionName='';ph.style.viewTransitionName='';root.classList.remove('vt')});
+}
+strip.addEventListener('click',e=>{if(mode!=='page'||Math.hypot(e.clientX-d0[0],e.clientY-d0[1])>6)return;const f=e.target.closest('figure');if(f)openFig(f)});
+strip.addEventListener('keydown',e=>{if(e.key==='Enter'){const f=e.target.closest('figure');if(f)openFig(f)}});
+
+let bag=[],view='bag',lastFocus=null;
+try{bag=JSON.parse(localStorage.getItem('dks-bag')||'[]')}catch(e){}
+const count=()=>bag.reduce((s,i)=>s+i.q,0),total=()=>bag.reduce((s,i)=>s+i.p*i.q,0);
+function save(){try{localStorage.setItem('dks-bag',JSON.stringify(bag))}catch(e){}}
+function renderBag(){
+  {const c=count();document.querySelectorAll('.bn').forEach(e=>{if(e.textContent!==String(c)){e.textContent=c;if(!RM&&e.animate)e.animate([{transform:'translateY(70%)',opacity:0},{transform:'none',opacity:1}],{duration:450,easing:'cubic-bezier(.76,0,.18,1)'})}})}
+  if(view==='processing'){bbody.innerHTML='<div class="ldr">'+logoSVG('lgl')+'<p class="msg dim">Placing your order…</p></div>';bfoot.innerHTML='';return}
+  if(view==='done'){bbody.innerHTML='<p class="msg">Thank you. Your order is placed. We’ll email a confirmation shortly.</p>';bfoot.innerHTML='<button class="btn" data-a="close">Close</button>';return}
+  if(!bag.length){bbody.innerHTML='<p class="msg">Your bag is empty.</p>';bfoot.innerHTML='<button class="btn" data-a="close">Browse pieces</button>';return}
+  if(view==='checkout'){
+    bbody.innerHTML=''+(DKS.paystackKey?'':'<p class="dim msg">Demo checkout. No payment is taken.</p>')+'<input class="fld" id="cn" placeholder="Full name" autocomplete="name"><input class="fld" id="ce" placeholder="Email" autocomplete="email"><textarea class="fld" id="ca" rows="3" placeholder="Delivery address" autocomplete="street-address"></textarea><p id="cerr" class="dim" role="alert"></p>';
+    bfoot.innerHTML='<div class="row"><span>Total</span><span>'+fmt(total())+'</span></div><button class="btn" data-a="place">'+(DKS.paystackKey?'Pay with Paystack':'Place order')+'</button><button class="lnk" data-a="back">Back to bag</button>';return}
+  bbody.innerHTML=bag.map((i,k)=>'<div class="li"><div class="th" data-s="'+i.s+'"></div><div><div>'+esc(i.n)+'</div>'+(i.note?'<div class="dim">Engraving: '+esc(i.note)+'</div>':'')+'<div class="qty"><button data-a="dec" data-k="'+k+'" aria-label="Decrease quantity">−</button><span>'+i.q+'</span><button data-a="inc" data-k="'+k+'" aria-label="Increase quantity">+</button><button class="dim" data-a="rm" data-k="'+k+'">Remove</button></div></div><div>'+fmt(i.p*i.q)+'</div></div>').join('');
+  bbody.querySelectorAll('.th').forEach(el=>{const t=document.querySelector('#cases-strip [data-slot="'+el.dataset.s+'"]');el.style.backgroundImage=(t&&t.style.backgroundImage)||('url('+(IMG[el.dataset.s]||'')+')')});
+  bfoot.innerHTML='<div class="row"><span>Subtotal</span><span>'+fmt(total())+'</span></div><p class="dim">Delivery is calculated at checkout.</p><button class="btn" data-a="checkout">Checkout</button><button class="btn ghost" data-a="wa">Order on WhatsApp</button>';
+}
+function openBag(){lastFocus=document.activeElement;view='bag';renderBag();bagEl.classList.add('open');scrim.classList.add('open');bagEl.setAttribute('aria-hidden','false');document.getElementById('bclose').focus()}
+function closeBag(){bagEl.classList.remove('open');scrim.classList.remove('open');bagEl.setAttribute('aria-hidden','true');if(lastFocus&&lastFocus.focus)lastFocus.focus()}
+scrim.addEventListener('click',closeBag);
+document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;if(ctOpen()){closeCT();e.stopPropagation()}else if(lbOpen())closeLB();else if(gfOpen()){closeGF();e.stopPropagation()}else if(bagOpen()){closeBag();e.stopPropagation()}else if(pdpOpen())location.hash='cases'});
+document.addEventListener('click',e=>{
+  if(e.target.closest('[data-bag]')){openBag();return}
+  if(e.target.closest('.padd')&&curP){
+    const nv=(pdp.querySelector('#eng')||{value:''}).value.trim(),note=nv?nv+' ('+eg.style+')':'';
+    const x=bag.find(i=>i.id===curP.id&&i.note===note);
+    if(x)x.q++;else bag.push({id:curP.id,n:curP.n,p:curP.p,s:curP.s,note:note,q:1});
+    save();flyToBag(()=>openBag());return}
+  const b=e.target.closest('#bag [data-a]');if(!b)return;
+  const a=b.dataset.a,k=+b.dataset.k;
+  if(a==='close'){closeBag();return}
+  if(a==='inc')bag[k].q++;
+  else if(a==='dec'){bag[k].q--;if(bag[k].q<1)bag.splice(k,1)}
+  else if(a==='rm')bag.splice(k,1);
+  else if(a==='wa'){waOrder();return}
+  else if(a==='checkout')view='checkout';
+  else if(a==='back')view='bag';
+  else if(a==='place'){
+    const v=id=>((document.getElementById(id)||{}).value||'').trim();
+    if(!v('cn')||!/\S+@\S+/.test(v('ce'))||!v('ca')){document.getElementById('cerr').textContent='Please enter your name, a valid email and your delivery address.';return}
+    if(DKS.paystackKey){payNow(v('cn'),v('ce'),v('ca'));return}
+    if(RM){bag=[];view='done'}else{view='processing';setTimeout(()=>{bag=[];view='done';save();renderBag()},1600)}}
+  save();renderBag();
+});
+
+/* ============ v3 modules ============ */
+const root=document.documentElement;
+const $=(s,r)=>(r||document).querySelector(s);
+const waURL=t=>'https://wa.me/'+(DKS.whatsapp||'')+'?text='+encodeURIComponent(t);
+function morph(from,to,mutate){
+  if(!VTok()){mutate();return}
+  from.style.viewTransitionName='pimg';root.classList.add('vt');
+  const t=document.startViewTransition(()=>{from.style.viewTransitionName='';to.style.viewTransitionName='pimg';mutate()});
+  t.finished.finally(()=>{to.style.viewTransitionName='';from.style.viewTransitionName='';root.classList.remove('vt')});
+}
+theme();
+
+/* ===== motion additions ===== */
+{
+  // headlines rise word by word each time a page is entered
+  document.querySelectorAll('.hl').forEach(h=>{const t=h.textContent.trim();h.setAttribute('aria-label',t);h.innerHTML=t.split(/\s+/).map((w,i)=>'<span class="wd" aria-hidden="true"><i style="--i:'+i+'">'+w+'</i></span>').join(' ')});
+  if(!RM){
+    // sections and the footer reveal as you scroll; re-armed whenever a page is entered
+    const rv={};
+    cards.forEach(card=>{
+      const page=card.querySelector('.page'),els=[...card.querySelectorAll('.sec')],fin=card.querySelector('.ftx');
+      if(!els.length&&!fin)return;
+      els.forEach(e=>e.classList.add('rvx'));
+      const io=new IntersectionObserver(es=>{let k=0;es.forEach(en=>{if(!en.isIntersecting)return;const e=en.target;io.unobserve(e);if(e===fin){e.classList.add('fin');return}e.style.setProperty('--d',k++);e.classList.add('rv')})},{root:page,threshold:.14});
+      rv[card.dataset.p]={page,els,fin,io,t:0};
+    });
+    const arm=(r,delay)=>{
+      r.els.forEach(e=>{e.style.transition='none';e.classList.remove('rv');r.io.unobserve(e)});
+      if(r.fin){r.fin.classList.add('nt');r.fin.classList.remove('fin');r.io.unobserve(r.fin)}
+      void r.page.offsetWidth;
+      r.els.forEach(e=>e.style.transition='');
+      if(r.fin)r.fin.classList.remove('nt');
+      clearTimeout(r.t);r.t=setTimeout(()=>{r.els.forEach(e=>r.io.observe(e));if(r.fin)r.io.observe(r.fin)},delay);
+    };
+    Object.values(rv).forEach(r=>arm(r,0));
+    let lastKey='';
+    const onEnter=()=>{const k=mode+cur;if(mode==='page'&&k!==lastKey&&rv[cur])arm(rv[cur],700);lastKey=k};
+    addEventListener('hashchange',onEnter);
+    setTimeout(onEnter,root.classList.contains('pre')?2800:500);
+
+    // pieces on the strips rise as they scroll into view
+    document.querySelectorAll('.strip').forEach(st=>{
+      const io=new IntersectionObserver(es=>{let k=0;es.forEach(en=>{const f=en.target;
+        if(en.isIntersecting){if(f.classList.contains('rvx')){f.style.setProperty('--d',k++);f.classList.add('rv');setTimeout(()=>f.classList.remove('rvx','rv'),1700)}io.unobserve(f)}
+        else if(!f.dataset.seen){f.dataset.seen=1;f.classList.add('rvx')}})},{root:st,threshold:.2});
+      st.querySelectorAll('figure').forEach(f=>io.observe(f));
+    });
+
+    // photos drift slower than their frames as the strips scroll
+    const strPx=st=>{const r=st.getBoundingClientRect(),cx=r.left+r.width/2;st.querySelectorAll('figure').forEach(f=>{const p=f.querySelector('.ph');if(!p)return;const b=f.getBoundingClientRect(),k=Math.max(-1,Math.min(1,((b.left+b.width/2)-cx)/(r.width/2)));p.style.setProperty('--bx',(50+k*42).toFixed(1)+'%')})};
+    document.querySelectorAll('.strip').forEach(st=>{let q=0;st.addEventListener('scroll',()=>{if(!q)q=requestAnimationFrame(()=>{q=0;strPx(st)})},{passive:true});strPx(st);addEventListener('hashchange',()=>setTimeout(()=>strPx(st),1200));addEventListener('resize',()=>strPx(st))});
+
+    // footer: the pill image slides as the footer scrolls into view
+    cards.forEach(card=>{
+      const page=card.querySelector('.page'),pill=card.querySelector('.ftpill'),ft=card.querySelector('.ftx');if(!pill||!ft)return;
+      let q=0;const run=()=>{q=0;const pr=page.getBoundingClientRect(),top=ft.getBoundingClientRect().top-pr.top,p=Math.max(0,Math.min(1,(pr.height-top)/(pr.height*.95)));pill.style.setProperty('--py',(2+p*38).toFixed(1)+'%')};
+      page.addEventListener('scroll',()=>{if(!q)q=requestAnimationFrame(run)},{passive:true});run();
+    });
+  }
+}
+
+// intro: the logo ripples in once per session, then the pieces rise in
+if(root.classList.contains('pre')){
+  const intro=$('#intro');
+  const finish=()=>{intro.classList.add('out');root.classList.add('go');setTimeout(()=>root.classList.remove('pre'),950);try{sessionStorage.setItem('dks-intro','1')}catch(e){}};
+  const wait=Promise.resolve();
+  wait.then(()=>setTimeout(finish,2400));
+}else root.classList.add('go');
+
+// split page titles into letters (they rise when the menu opens)
+document.querySelectorAll('.ttl').forEach(h=>{const t=h.textContent;h.setAttribute('aria-label',t);h.innerHTML=[...t].map((c,i)=>'<span class="ch" aria-hidden="true"><i style="--i:'+i+'">'+(c===' '?'&nbsp;':c)+'</i></span>').join('')});
+
+// custom cursor with a label, and magnetic buttons
+if(matchMedia('(pointer:fine)').matches&&!RM){
+  root.classList.add('hascur');
+  const c=$('#cur');let x=-100,y=-100,cx=-100,cy=-100,run=false,mag=null;
+  const loop=()=>{cx+=(x-cx)*.2;cy+=(y-cy)*.2;c.style.translate=cx+'px '+cy+'px';if(Math.abs(x-cx)>.1||Math.abs(y-cy)>.1||c.classList.contains('on'))requestAnimationFrame(loop);else run=false};
+  addEventListener('pointermove',e=>{
+    if(e.pointerType!=='mouse')return;
+    x=e.clientX;y=e.clientY;
+    const t=e.target.closest?e.target:document.body;let lab='';
+    if(pdpOpen()&&!bagOpen()&&t.closest('.padd'))lab='add';
+    else if(mode==='menu'&&t.closest('.card'))lab='open';
+    else if(mode==='page'&&!pdpOpen()&&!bagOpen()&&!$('#lb').classList.contains('open')){if(t.closest('figure'))lab='view';else if(t.closest('.strip'))lab='drag'}
+    c.textContent=lab;c.classList.toggle('on',!!lab);
+    if(!run){run=true;requestAnimationFrame(loop)}
+    const m=t.closest('.padd,.btn,.bag,.gbtn');
+    if(mag&&mag!==m){mag.style.translate='';mag=null}
+    if(m){const r=m.getBoundingClientRect();m.style.translate=((e.clientX-(r.left+r.width/2))*.18)+'px '+((e.clientY-(r.top+r.height/2))*.28)+'px';mag=m}
+  });
+  addEventListener('pointerdown',()=>c.classList.add('down'));
+  addEventListener('pointerup',()=>c.classList.remove('down'));
+  document.addEventListener('pointerleave',()=>{c.classList.remove('on');if(mag){mag.style.translate='';mag=null}});
+}
+
+// menu: cards lean toward the pointer
+if(!RM){
+  cards.forEach(c=>{
+    c.addEventListener('pointermove',e=>{if(mode!=='menu'||e.pointerType!=='mouse')return;const r=c.getBoundingClientRect(),px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(1400px) rotateY('+(px*7)+'deg) rotateX('+(-py*5)+'deg)'});
+    c.addEventListener('pointerleave',()=>{c.style.transform=''});
+  });
+  addEventListener('hashchange',()=>cards.forEach(c=>c.style.transform=''));
+}
+
+// about: words light up as you read, portrait drifts
+const aboutPage=$('[data-p=about] .page'),aboutWords=[];
+document.querySelectorAll('[data-p=about] .tx').forEach(p=>{const ws=p.textContent.trim().split(/\s+/);p.innerHTML=ws.map(w=>'<span class="w">'+w+'</span>').join(' ');aboutWords.push([p,[...p.children]])});
+const aboutPt=$('[data-p=about] .pt');
+function aboutFx(){
+  if(RM)return;
+  const vh=aboutPage.clientHeight||innerHeight;
+  aboutWords.forEach(a=>{const top=a[0].getBoundingClientRect().top,q=(vh*.96-top)/(vh*.34),n=a[1].length;a[1].forEach((w,i)=>{w.style.opacity=(q*n>i)?1:''})});
+  if(aboutPt)aboutPt.style.translate='0 '+(aboutPage.scrollTop*.14)+'px';
+}
+aboutPage.addEventListener('scroll',aboutFx,{passive:true});
+addEventListener('resize',aboutFx);addEventListener('hashchange',()=>setTimeout(aboutFx,60));
+setTimeout(aboutFx,300);
+
+// touch: swipe between pages
+let sx=0,sy=0,sOk=false;
+addEventListener('touchstart',e=>{const t=e.touches[0];sx=t.clientX;sy=t.clientY;sOk=(mode==='page'&&!pdpOpen()&&!overlayOpen()&&!bagOpen()&&!e.target.closest('.strip,#pdp,#bag,#gf,#lb,#ct,input,textarea,select'))||(mode==='menu'&&!bagOpen()&&!overlayOpen())},{passive:true});
+addEventListener('touchend',e=>{if(!sOk)return;const t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;if(mode==='menu'){if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)*1.3){const i=order.indexOf(cur)+(dx<0?1:-1);if(i>=0&&i<order.length){cur=order[i];cards.forEach(c=>c.classList.toggle('on',c.dataset.p===cur));layout()}}return}
+  if(Math.abs(dx)>70&&Math.abs(dy)<45){const i=order.indexOf(cur)+(dx<0?1:-1);if(i>=0&&i<order.length)location.hash=order[i]}},{passive:true});
+
+// archive: lightbox with the story behind each piece
+const lb=$('#lb'),lbi=$('#lbi'),archStrip=$('#arch-strip');let lbk=0,lbFocus=null;
+const lbOpen=()=>lb.classList.contains('open');
+function fillLB(k){const t=archStrip.children[k].querySelector('.ph'),cs=getComputedStyle(t);lbk=k;$('#lbn').textContent=String(k+1).padStart(2,'0')+' / '+String(ARCH.length).padStart(2,'0');$('#lbh').textContent=ARCH[k][0];$('#lby').textContent=ARCH[k][1];$('#lbp').textContent=ARCH[k][2];lbi.style.backgroundColor=cs.backgroundColor;lbi.style.backgroundImage=cs.backgroundImage;lbi.style.backgroundSize='cover';lbi.style.backgroundPosition='center';lbi.setAttribute('aria-label',ARCH[k][0])}
+function openLB(k){fillLB(k);lbFocus=document.activeElement;morph(archStrip.children[k].querySelector('.ph'),lbi,()=>{lb.classList.add('open');lb.setAttribute('aria-hidden','false')});setTimeout(()=>$('#lbx').focus(),60)}
+function closeLB(){morph(lbi,archStrip.children[lbk].querySelector('.ph'),()=>{lb.classList.remove('open');lb.setAttribute('aria-hidden','true')});if(lbFocus&&lbFocus.focus)lbFocus.focus()}
+const stepLB=d=>fillLB((lbk+d+ARCH.length)%ARCH.length);
+let da0=[0,0];
+archStrip.addEventListener('pointerdown',e=>{da0=[e.clientX,e.clientY]},true);
+archStrip.addEventListener('click',e=>{if(mode!=='page'||Math.hypot(e.clientX-da0[0],e.clientY-da0[1])>6)return;const f=e.target.closest('figure');if(f)openLB(+f.dataset.i)});
+archStrip.addEventListener('keydown',e=>{if(e.key==='Enter'){const f=e.target.closest('figure');if(f)openLB(+f.dataset.i)}});
+$('#lbx').onclick=closeLB;$('#lbprev').onclick=()=>stepLB(-1);$('#lbnext').onclick=()=>stepLB(1);
+addEventListener('keydown',e=>{if(!lbOpen())return;if(e.key==='ArrowRight')stepLB(1);if(e.key==='ArrowLeft')stepLB(-1)});
+
+// pieces: gift finder
+const OCC={birthday:['pendant','hoops','bracelet','ring'],wedding:['ring','locket','hoops'],anniversary:['pendant','locket','ring','bracelet'],baby:['bracelet','locket','pendant']};
+const STY={delicate:['pendant','hoops','bracelet'],bold:['ring','locket']};
+const BUD={a:[0,60000],b:[60000,90000],c:[90000,1e9]};
+const GFQ=[['occ','The occasion',[['birthday','Birthday'],['wedding','Wedding'],['anniversary','Anniversary'],['baby','New baby']]],['bud','Budget',[['a','Under ₦60,000'],['b','₦60,000 to ₦90,000'],['c','Over ₦90,000']]],['sty','Style',[['delicate','Delicate'],['bold','Bold']]]];
+const gf={occ:null,bud:null,sty:null};
+const gfEl=$('#gf'),gfBtn=$('#gfbtn'),cstrip=$('#cases-strip');let gfFocus=null;
+const gfOpen=()=>gfEl.classList.contains('open');
+const gfMatch=p=>(!gf.occ||OCC[gf.occ].includes(p.t))&&(!gf.bud||(p.p>=BUD[gf.bud][0]&&p.p<BUD[gf.bud][1]))&&(!gf.sty||STY[gf.sty].includes(p.t));
+$('#gfbody').innerHTML=GFQ.map(q=>'<div class="gq"><h3>'+q[1]+'</h3><div class="chips">'+q[2].map(o=>'<button type="button" class="chip" data-k="'+q[0]+'" data-v="'+o[0]+'">'+o[1]+'</button>').join('')+'</div></div>').join('');
+function gfApply(){
+  let n=0;[...cstrip.children].forEach(f=>{const p=P.find(x=>x.id===f.dataset.id),ok=p&&gfMatch(p);f.classList.toggle('dm',!ok);if(ok)n++});
+  const any=gf.occ||gf.bud||gf.sty;
+  gfBtn.textContent=any?'Gift finder: '+n+' match'+(n===1?'':'es'):'Find a gift';
+  $('#gffoot').innerHTML='<button class="btn" data-g="show">'+(any?'Show '+n+' piece'+(n===1?'':'s'):'Browse all pieces')+'</button><button class="lnk" data-g="clear">Clear</button>';
+  gfEl.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',gf[c.dataset.k]===c.dataset.v));
+}
+function openGF(){gfFocus=document.activeElement;gfEl.classList.add('open');scrim.classList.add('open');gfEl.setAttribute('aria-hidden','false');setTimeout(()=>{const c=$('.chip',gfEl);if(c)c.focus()},60)}
+function closeGF(){gfEl.classList.remove('open');if(!bagOpen())scrim.classList.remove('open');gfEl.setAttribute('aria-hidden','true');if(gfFocus&&gfFocus.focus)gfFocus.focus()}
+gfBtn.addEventListener('click',openGF);$('#gfclose').addEventListener('click',closeGF);scrim.addEventListener('click',closeGF);
+gfEl.addEventListener('click',e=>{
+  const c=e.target.closest('.chip');if(c){gf[c.dataset.k]=gf[c.dataset.k]===c.dataset.v?null:c.dataset.v;gfApply();return}
+  const g=e.target.closest('[data-g]');if(!g)return;
+  if(g.dataset.g==='clear'){gf.occ=gf.bud=gf.sty=null;gfApply();return}
+  closeGF();const first=[...cstrip.children].find(f=>!f.classList.contains('dm'));
+  if(first&&cstrip._go)cstrip._go(first.offsetLeft-(parseFloat(getComputedStyle(cstrip).paddingLeft)||0));
+});
+gfApply();
+
+// studio
+function goTo(pg,id){
+  const run=()=>{const P2=document.querySelector('[data-p="'+pg+'"] .page'),t=document.getElementById(id);if(!P2||!t)return;P2.scrollTo({top:t.getBoundingClientRect().top-P2.getBoundingClientRect().top+P2.scrollTop-96,behavior:RM?'auto':'smooth'})};
+  if(cur!==pg||mode!=='page'){location.hash=pg;setTimeout(run,1300)}else run();
+}
+document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(!g)return;e.preventDefault();const s=g.dataset.go.split(':');goTo(s[0],s[1])});
+const ftHTML='<div class="ftx-top"><h2 class="ftx-h"><span class="fw" style="--i:0">we</span> <span class="ftpill ph fw" style="--i:1" data-slot="c1" role="img" aria-label="Detail of a gold chain on copper"></span> <span class="fw" style="--i:2">know</span> <span class="fw" style="--i:3">how</span> <span class="fw" style="--i:4">to</span> <span class="fw" style="--i:5">make</span> <em><span class="fw" style="--i:6">this</span> <span class="fw" style="--i:7">special</span></em></h2><div class="ftx-cta"><button type="button" class="gbtn" data-go="studio:s-commission">Get started</button><p>Personal keepsakes made to order around a name, a date or a story.</p></div></div>'
+ +'<nav class="ftx-nav" aria-label="Footer"><div><button type="button" data-go="studio:s-how">Services</button><a href="#cases">Shop</a>'+(DKS.instagram?'<a href="'+DKS.instagram+'" target="_blank" rel="noopener">Instagram</a>':'')+'<button type="button" data-go="studio:s-commission">Custom</button><button type="button" data-bag>Cart(<span class="bn">0</span>)</button></div>'
+ +'<div><button type="button" data-go="studio:p-privacy">Privacy</button><button type="button" data-go="studio:p-cookies">Cookies</button><button type="button" data-go="studio:p-returns">Returns</button></div></nav>'
+ +'<div class="ftx-fine"><p>© '+new Date().getFullYear()+' dé keepsake smith. Every piece is made to order in sterling silver with 18k gold plating and ships in 5 to 7 working days. Pieces can be returned within 14 days and engraved pieces are final sale. Resizing a ring is free within 30 days of delivery. Prices are in Nigerian naira.</p></div>';
+document.querySelectorAll('[data-ft]').forEach(f=>f.innerHTML=ftHTML);
+document.querySelectorAll('.ftpill').forEach(loadSlot);
+const studioPage=$('[data-p=studio] .page');
+const STORIES=[{q:'The note inside was only a name and a date. It was enough.',w:'A locket for a first year'},{q:'We ordered twelve matching pieces and each one still felt chosen.',w:'Wedding favours'},{q:'Plain packaging would have been fine. This is the one we kept.',w:'Corporate gifting'}];
+$('#stories').innerHTML=STORIES.map(s=>'<div class="story"><p class="sq">“'+s.q+'”</p><span class="dim">'+s.w+'</span><span class="tag">Sample copy</span></div>').join('');
+const FAQ=[['How long does an order take?','Every piece is made to order and ships in 5 to 7 working days.'],['Can I return a piece?','Pieces can be returned within 14 days. Engraved pieces are final sale.'],['Can a ring be resized?','Yes. Resizing is free within 30 days of delivery.'],['What are the pieces made of?','Sterling silver with 18k gold plating.'],['How do I look after my piece?','Keep it dry, wipe it with a soft cloth and store it in the pouch it comes in.'],['Can I order in numbers?','Yes. Use the form above for weddings, teams and clients and tell us the quantity and the date you need them by.']];
+const faq=$('#faq');
+faq.innerHTML=FAQ.map(x=>'<div class="ai"><button type="button" class="ah" aria-expanded="false"><span>'+x[0]+'</span><i>+</i></button><div class="ap"><div><div>'+x[1]+'</div></div></div></div>').join('');
+faq.addEventListener('click',e=>{const b=e.target.closest('.ah');if(!b)return;const it=b.parentNode,o=!it.classList.contains('o');it.classList.toggle('o',o);b.setAttribute('aria-expanded',o)});
+const stepEls=document.querySelectorAll('.steps li');
+if('IntersectionObserver' in window){const so=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('seen');so.unobserve(en.target)}}),{root:studioPage,threshold:.35});stepEls.forEach(l=>so.observe(l))}else stepEls.forEach(l=>l.classList.add('seen'));
+$('#quote').addEventListener('click',()=>{$('#cf').elements.type.value='Corporate gifting';goTo('studio','s-commission')});
+function cfText(f){const v=n=>f.elements[n].value.trim();return 'Hello dé keepsake smith.\nRequest: '+v('type')+'\nName: '+v('name')+'\nContact: '+(v('contact')||'-')+'\nDetails: '+v('details')}
+function cfOk(f){const ok=f.elements.name.value.trim()&&f.elements.details.value.trim();$('#cferr').textContent=ok?'':'Please add your name and a few details.';return ok}
+$('#cf').addEventListener('submit',e=>{e.preventDefault();if(cfOk(e.target))window.open(waURL(cfText(e.target)),'_blank','noopener')});
+$('#cmail').addEventListener('click',()=>{const f=$('#cf');if(cfOk(f))location.href='mailto:'+DKS.email+'?subject='+encodeURIComponent('Commission request')+'&body='+encodeURIComponent(cfText(f))});
+$('#nl').addEventListener('submit',e=>{e.preventDefault();const em=e.target.elements.email.value.trim(),m=$('#nlm');if(!/\S+@\S+\.\S+/.test(em)){m.textContent='Please enter a valid email address.';return}try{const l=JSON.parse(localStorage.getItem('dks-list')||'[]');l.push(em);localStorage.setItem('dks-list',JSON.stringify(l))}catch(x){}if(DKS.newsletterAction){fetch(DKS.newsletterAction,{method:'POST',mode:'no-cors',body:new URLSearchParams({email:em})}).catch(()=>{})}m.textContent='Thank you. You are on the list.';e.target.reset()});
+
+// product page: gallery views, pairs with
+const pimg=pdp.querySelector('.pimg');let gv=0;
+const VIEWS=[['cover','center'],['230%','30% 35%'],['340%','62% 58%']];
+function setView(v){gv=v;pimg.querySelectorAll('.gal button').forEach(b=>b.classList.toggle('on',+b.dataset.v===v));pimg.style.backgroundSize=VIEWS[v][0];pimg.style.backgroundPosition=VIEWS[v][1]}
+pimg.addEventListener('pointermove',e=>{if(!gv||e.pointerType!=='mouse')return;const r=pimg.getBoundingClientRect();pimg.style.backgroundPosition=((e.clientX-r.left)/r.width*100)+'% '+((e.clientY-r.top)/r.height*100)+'%'});
+function fillPairs(p){const o=P.filter(x=>x.t!==p.t),i=P.indexOf(p),pk=[];for(let k=0;k<o.length&&pk.length<3;k++){const c=o[(i+k*3)%o.length];if(!pk.includes(c))pk.push(c)}$('#pairs').innerHTML='<span class="dim">Pairs with</span>'+pk.map(x=>'<a href="#'+x.id+'">'+x.n+' <span class="dim">'+fmt(x.p)+'</span></a>').join('')}
+
+// bag: fly to bag, WhatsApp order, Paystack, focus trap
+function flyToBag(cb){
+  const src=pdp.querySelector('.pimg'),dst=pdp.querySelector('.bag')||$('.bag');
+  if(RM||!src||!dst||!src.animate){cb();return}
+  const a=src.getBoundingClientRect(),b=dst.getBoundingClientRect(),f=document.createElement('div');
+  f.className='fly';f.style.left=(a.left+a.width/2-40)+'px';f.style.top=(a.top+a.height/2-50)+'px';f.style.backgroundImage=src.style.backgroundImage;
+  document.body.appendChild(f);
+  const dx=b.left+b.width/2-(a.left+a.width/2),dy=b.top+b.height/2-(a.top+a.height/2);
+  const an=f.animate([{transform:'translate(0,0) scale(1)',opacity:1},{transform:'translate('+dx*.5+'px,'+(dy*.5-60)+'px) scale(.7)',opacity:1,offset:.45},{transform:'translate('+dx+'px,'+dy+'px) scale(.12)',opacity:.4}],{duration:700,easing:'cubic-bezier(.76,0,.18,1)'});
+  an.onfinish=()=>{f.remove();bagPulse(dst);cb()};
+}
+const itemsText=()=>bag.map(i=>i.n+' x'+i.q+(i.note?' (engraving: '+i.note+')':'')+' '+fmt(i.p*i.q)).join('\n');
+function waOrder(){window.open(waURL('Hello dé keepsake smith, I would like to order:\n'+itemsText()+'\nTotal: '+fmt(total())),'_blank','noopener')}
+function payNow(name,email,addr){
+  const go=()=>{
+    const h=PaystackPop.setup({key:DKS.paystackKey,email:email,amount:total()*100,currency:'NGN',metadata:{custom_fields:[{display_name:'Name',variable_name:'name',value:name},{display_name:'Address',variable_name:'address',value:addr},{display_name:'Items',variable_name:'items',value:itemsText()}]},callback:function(){bag=[];view='done';save();renderBag()},onClose:function(){}});
+    h.openIframe();
+  };
+  if(window.PaystackPop){go();return}
+  const s=document.createElement('script');s.src='https://js.paystack.co/v1/inline.js';s.onload=go;s.onerror=()=>{const e=document.getElementById('cerr');if(e)e.textContent='Could not reach the payment service. Please try again or order on WhatsApp.'};document.head.appendChild(s);
+}
+bagEl.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const f=[...bagEl.querySelectorAll('button,input,textarea,a[href]')].filter(x=>!x.disabled&&x.offsetParent!==null);if(!f.length)return;const a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){z.focus();e.preventDefault()}else if(!e.shiftKey&&document.activeElement===z){a.focus();e.preventDefault()}});
+
+// contact popup (header Contact link; mailto stays as the no-JS fallback)
+const ctEl=$('#ct'),ctBody=$('#ctb');let ctFocus=null;
+const ctOpen=()=>ctEl.classList.contains('open');
+function ctRender(){
+  const em=DKS.email,wa=DKS.whatsapp,ig=DKS.instagram;
+  ctBody.innerHTML='<h2>Say hello</h2><p class="cts">Questions, custom work or an order in progress. We reply within a day.</p>'
+   +(em?'<div class="ctr"><span>Email</span><span class="ctv"><a href="mailto:'+em+'">'+em+'</a><button type="button" class="lnk" data-ct="copy">Copy</button></span></div>':'')
+   +(wa?'<a class="ctr" href="'+waURL('Hello, I would like to ask about a piece.')+'" target="_blank" rel="noopener"><span>WhatsApp</span><span>Message us</span></a>':'')
+   +(ig?'<a class="ctr" href="'+ig+'" target="_blank" rel="noopener"><span>Instagram</span><span>Follow along</span></a>':'')
+   +'<button type="button" class="gbtn" data-ct="commission">Commission a piece</button>';
+}
+function openCT(){ctRender();ctFocus=document.activeElement;ctEl.classList.add('open');scrim.classList.add('open');ctEl.setAttribute('aria-hidden','false');setTimeout(()=>{const a=ctEl.querySelector('.ctv a,.ctr,.gbtn');if(a)a.focus()},60)}
+function closeCT(){if(!ctOpen())return;ctEl.classList.remove('open');if(!bagOpen()&&!gfOpen())scrim.classList.remove('open');ctEl.setAttribute('aria-hidden','true');if(ctFocus&&ctFocus.focus)ctFocus.focus()}
+document.addEventListener('click',e=>{
+  const a=e.target.closest('[data-contact]');
+  if(!a||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button)return;
+  e.preventDefault();openCT();
+});
+$('#ctx').addEventListener('click',closeCT);scrim.addEventListener('click',closeCT);
+ctEl.addEventListener('click',e=>{
+  const b=e.target.closest('[data-ct]');if(!b)return;
+  if(b.dataset.ct==='commission'){closeCT();goTo('studio','s-commission');return}
+  if(b.dataset.ct==='copy'){
+    const t=b.querySelector('i')||b,was='Copy';
+    const done=ok=>{t.textContent=ok?'Copied':'Failed';clearTimeout(b._t);b._t=setTimeout(()=>{t.textContent=was},1600)};
+    const fb=()=>{try{const x=document.createElement('textarea');x.value=DKS.email;x.setAttribute('readonly','');x.style.cssText='position:fixed;left:-9999px;top:0;opacity:0';document.body.appendChild(x);x.select();x.setSelectionRange(0,99);const ok=document.execCommand('copy');x.remove();done(ok)}catch(_){done(false)}};
+    if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(DKS.email).then(()=>done(true),fb);else fb();
+  }
+});
+ctEl.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const f=[...ctEl.querySelectorAll('button,a[href]')].filter(x=>!x.disabled&&x.offsetParent!==null);if(!f.length)return;const a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){z.focus();e.preventDefault()}else if(!e.shiftKey&&document.activeElement===z){a.focus();e.preventDefault()}});
+
+// text roll on every clickable nav item and button (re-applied when the page re-renders them)
+const RSEL='.mn a,.nm .po,.bag,.ttb,.padd,.btn,.gbtn,.chip,.lnk,.ft a,.ft button,.ftx a,.ftx button,#gfbtn,.bh button,.eg button';
+function rl(el){
+  if(el.querySelector(':scope>.rl'))return;
+  const t=el.textContent.trim();if(!t)return;
+  const w=document.createElement('span'),i=document.createElement('i');
+  w.className='rl';i.dataset.t=t;
+  while(el.firstChild)i.appendChild(el.firstChild);
+  w.appendChild(i);el.appendChild(w);
+}
+document.querySelectorAll(RSEL).forEach(rl);
+new MutationObserver(ms=>{ms.forEach(m=>{
+  const t=m.target.nodeType===1?m.target:m.target.parentElement;if(!t)return;
+  const i=t.closest('.rl i');if(i){i.dataset.t=i.textContent.trim();return}
+  const e=t.closest(RSEL);if(e)rl(e);
+  if(t.querySelectorAll)t.querySelectorAll(RSEL).forEach(rl);
+})}).observe(document.body,{childList:true,subtree:true,characterData:true});
+
+// structured data for search engines
+try{
+  const ld={'@context':'https://schema.org','@type':'ItemList',itemListElement:P.map((p,i)=>({'@type':'ListItem',position:i+1,item:{'@type':'Product',name:p.n,description:DET[p.t],offers:{'@type':'Offer',price:p.p,priceCurrency:'NGN',availability:'https://schema.org/InStock'}}}))};
+  const s=document.createElement('script');s.type='application/ld+json';s.textContent=JSON.stringify(ld);document.head.appendChild(s);
+}catch(e){}
+
+renderBag();pdpRoute();
+
+route();
+requestAnimationFrame(()=>requestAnimationFrame(()=>document.body.classList.add('ready')));
+})();
+</script>
+</body>
+</html>
